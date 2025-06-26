@@ -1,17 +1,10 @@
 # Financial Aid
 
-A college education has become a significant expense for most families a=
-nd requires careful planning. Whatever your financial situation is, we enco=
-urage you to use this information to help you understand college funding so=
- you can navigate the financial aid process with greater ease.
+A college education has become a significant expense for most families and requires careful planning. Whatever your financial situation is, we encourage you to use this information to help you understand college funding so you can navigate the financial aid process with greater ease.
 
 ## State Financial Aid
 
-States provide many financial aid opportunities to help ease the cost of=
- a college education. Please select the state you reside in to learn about =
-state sponsored internships, scholarships and financial aid programs for un=
-dergraduate students and assistantships, fellowships, and residency program=
-s for graduate and professional students.
+States provide many financial aid opportunities to help ease the cost of a college education. Please select the state you reside in to learn about state sponsored internships, scholarships and financial aid programs for undergraduate students and assistantships, fellowships, and residency programs for graduate and professional students.
 
 - Alabama
 - Alaska
@@ -68,79 +61,53 @@ s for graduate and professional students.
 
 # STATE OF COLORADO FINANCIAL AID PROGRAMS
 
-For more detailed information on state financial aid programs contac=
-t:
+For more detailed information on state financial aid programs contact:
 
 Colorado Department of Higher Education (CDHE)
-=
          1600 Broadway, Suite 2200
-    Denver, CO 80202=
-
+    Denver, CO 80202
     Phone: (303) 862-3001
   https://highered.colorado.gov/
 
-The following are financial aid programs available to students who a=
-re residents of the state of Colorado
+The following are financial aid programs available to students who are residents of the state of Colorado
 
-Colorado student aid is appropriated by the state legislature and al=
-located by the Colorado Commission on Higher Education to eligible Colorado=
- colleges    and universities. Colorado student aid awards are made by inst=
-itutions to students based upon state guidelines and according to instituti=
-onal policies and    procedures. Any aid received must be used for tuition,=
- fees, room, board, books, supplies or other expenses related to attendance=
- at Colorado institutions.
+Colorado student aid is appropriated by the state legislature and allocated by the Colorado Commission on Higher Education to eligible Colorado colleges    and universities. Colorado student aid awards are made by institutions to students based upon state guidelines and according to institutional policies and    procedures. Any aid received must be used for tuition, fees, room, board, books, supplies or other expenses related to attendance at Colorado institutions.
 
-Contact colleges for complete information and details about applicat=
-ion procedures and deadlines. Institutions may vary in what they offer to s=
-tudents, and    State aid is not transferable between institutions.
+Contact colleges for complete information and details about application procedures and deadlines. Institutions may vary in what they offer to students, and    State aid is not transferable between institutions.
 
 General Student Eligibility Requirements
 
-A student must meet the following requirements to be eligible to app=
-ly for state assistance programs:
+A student must meet the following requirements to be eligible to apply for state assistance programs:
 
-Colorado residency for tuition purposes (a small percentage of Gradu=
-ate Fellowship awards may be made to non-residents of Colorado at some inst=
-itutions.);
+Colorado residency for tuition purposes (a small percentage of Graduate Fellowship awards may be made to non-residents of Colorado at some institutions.);
 
-Enrollment in an eligible program at an eligible Colorado postsecond=
-ary institution;
+Enrollment in an eligible program at an eligible Colorado postsecondary institution;
 
 Satisfactory progress toward completion of a course of study;
 
 No defaulted educational loans or grants.
 
-**The following is a list of state assistance programs, which may be=
- available at participating institutions in Colorado:
+**The following is a list of state assistance programs, which may be available at participating institutions in Colorado:
 
 ### Colorado Need-based Awards
 
-Includes the Colorado Student Grant, Colorado Graduate Grant. Availa=
-ble to qualified students with documented financial need.
+Includes the Colorado Student Grant, Colorado Graduate Grant. Available to qualified students with documented financial need.
 
 ### Colorado Work-Study
 
-Part-time employment program designed to assist students with financ=
-ial need or work experience.
+Part-time employment program designed to assist students with financial need or work experience.
 
 ### Dependents Tuition Assistance Program
 
-Pays tuition, room and board for dependents of Colorado law enforcem=
-ent officers, fire or national guard personnel killed or disabled in the li=
-ne of duty,    and for dependents of prisoners of war or service personnel =
-listed as missing in action. Applications are available at the Colorado Com=
-mission on Higher    Education.
+Pays tuition, room and board for dependents of Colorado law enforcement officers, fire or national guard personnel killed or disabled in the line of duty,    and for dependents of prisoners of war or service personnel listed as missing in action. Applications are available at the Colorado Commission on Higher    Education.
 
 ### Colorado National Guard Tuition Assistance Program
 
-Pays up to 100% of tuition costs at state supported institutions, fo=
-r its members. For more information, contact a National Guard recruiter or =
-the state    tuition assistance office at (303) 677-8913.
+Pays up to 100% of tuition costs at state supported institutions, for its members. For more information, contact a National Guard recruiter or the state    tuition assistance office at (303) 677-8913.
 
 NOTE:
 
-All programs may not be available at all participating institutions.=
- Contact the institution for details.
+All programs may not be available at all participating institutions. Contact the institution for details.
 
 ## Scholarship of the Day
 
@@ -168,8 +135,7 @@ All programs may not be available at all participating institutions.=
 
 #### Connect With Us
 
-=C2=A9 Copyright 2025. TF=
-S Scholarships. All rights reserved. Copyright / Privacy Policy
+=C2=A9 Copyright 2025. TFS Scholarships. All rights reserved. Copyright / Privacy Policy
 
 ## Quick Links
 
@@ -200,15 +166,13 @@ Connect with us:
 
 <!-- image -->
 
-###### How to=
- Win a Scholarship
+###### How to Win a Scholarship
 
 =09
 
 <!-- image -->
 
-###### Scholar=
-ship Opportunity
+###### Scholarship Opportunity
 
 =09
 
@@ -226,7 +190,6 @@ ship Opportunity
 
 <!-- image -->
 
-=C2=A92018 Tuition Funding Sources - All rights=
- reserved.						=09
+=C2=A92018 Tuition Funding Sources - All rights reserved.						=09
 
 =20

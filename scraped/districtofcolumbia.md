@@ -1,17 +1,10 @@
 # Financial Aid
 
-A college education has become a significant expense for most families a=
-nd requires careful planning. Whatever your financial situation is, we enco=
-urage you to use this information to help you understand college funding so=
- you can navigate the financial aid process with greater ease.
+A college education has become a significant expense for most families and requires careful planning. Whatever your financial situation is, we encourage you to use this information to help you understand college funding so you can navigate the financial aid process with greater ease.
 
 ## State Financial Aid
 
-States provide many financial aid opportunities to help ease the cost of=
- a college education. Please select the state you reside in to learn about =
-state sponsored internships, scholarships and financial aid programs for un=
-dergraduate students and assistantships, fellowships, and residency program=
-s for graduate and professional students.
+States provide many financial aid opportunities to help ease the cost of a college education. Please select the state you reside in to learn about state sponsored internships, scholarships and financial aid programs for undergraduate students and assistantships, fellowships, and residency programs for graduate and professional students.
 
 - Alabama
 - Alaska
@@ -70,19 +63,13 @@ s for graduate and professional students.
 
 # Financial Aid Programs
 
-The following link provides the most current information reg=
-arding Financial Aid assistance for students looking to obtain a post-secon=
-dary schooleducation.
+The following link provides the most current information regarding Financial Aid assistance for students looking to obtain a post-secondary schooleducation.
 
-https://dccap.org/index.php?q=
-=3Dcollege-students/financial-aid-scholarships
+https://dccap.org/index.php?q=3Dcollege-students/financial-aid-scholarships
 
 ### District of Columbia College Access Program (DC-CAP)
 
-District of Columbia College Access Program (DC-CAP) advisors are locate=
-d in DC public and DC public charter high school=E2=80=99s DC-CAP College I=
-nformation Resource Centers (CIRC) or by calling the DC-CAP main office at =
-202-783-7933.
+District of Columbia College Access Program (DC-CAP) advisors are located in DC public and DC public charter high school's DC-CAP College Information Resource Centers (CIRC) or by calling the DC-CAP main office at 202-783-7933.
 
 ## Scholarship of the Day
 
@@ -110,8 +97,7 @@ nformation Resource Centers (CIRC) or by calling the DC-CAP main office at =
 
 #### Connect With Us
 
-=C2=A9 Copyright 2025. TF=
-S Scholarships. All rights reserved. Copyright / Privacy Policy
+=C2=A9 Copyright 2025. TFS Scholarships. All rights reserved. Copyright / Privacy Policy
 
 ## Quick Links
 
@@ -142,15 +128,13 @@ Connect with us:
 
 <!-- image -->
 
-###### How to=
- Win a Scholarship
+###### How to Win a Scholarship
 
 =09
 
 <!-- image -->
 
-###### Scholar=
-ship Opportunity
+###### Scholarship Opportunity
 
 =09
 
@@ -168,7 +152,6 @@ ship Opportunity
 
 <!-- image -->
 
-=C2=A92018 Tuition Funding Sources - All rights=
- reserved.						=09
+=C2=A92018 Tuition Funding Sources - All rights reserved.						=09
 
 =20

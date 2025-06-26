@@ -1,17 +1,10 @@
 # Financial Aid
 
-A college education has become a significant expense for most families a=
-nd requires careful planning. Whatever your financial situation is, we enco=
-urage you to use this information to help you understand college funding so=
- you can navigate the financial aid process with greater ease.
+A college education has become a significant expense for most families and requires careful planning. Whatever your financial situation is, we encourage you to use this information to help you understand college funding so you can navigate the financial aid process with greater ease.
 
 ## State Financial Aid
 
-States provide many financial aid opportunities to help ease the cost of=
- a college education. Please select the state you reside in to learn about =
-state sponsored internships, scholarships and financial aid programs for un=
-dergraduate students and assistantships, fellowships, and residency program=
-s for graduate and professional students.
+States provide many financial aid opportunities to help ease the cost of a college education. Please select the state you reside in to learn about state sponsored internships, scholarships and financial aid programs for undergraduate students and assistantships, fellowships, and residency programs for graduate and professional students.
 
 - Alabama
 - Alaska
@@ -68,44 +61,31 @@ s for graduate and professional students.
 
 # STATE OF CONNECTICUT FINANCIAL AID PROGRAMS
 
-For more detailed information on state financial aid programs contac=
-t:
+For more detailed information on state financial aid programs contact:
 
 Connecticut Department of Higher Education
 
 450 Columbus Blvd
     Hartford, CT 06103-1841
-    (860) 947-18=
-00
+    (860) 947-1800
     (860) 947-1310 Fax
-   http://ww=
-w.ctohe.org/
+   http://www.ctohe.org/
 
 ### Roberta B Willis Need-Merit Scholarship Program
 
-Who is Eligible: CT resident who is a high school senior or graduate=
- with a high school junior year class rank of 20% or better and/or SAT scor=
-es of at least 1200 or ACT score of at least 25.  Recipient must attend a C=
-T public or non-profit private college.
+Who is Eligible: CT resident who is a high school senior or graduate with a high school junior year class rank of 20% or better and/or SAT scores of at least 1200 or ACT score of at least 25.  Recipient must attend a CT public or non-profit private college.
 
-Amount: Up to $5,250 a year for full-time attendance in a 4-year pro=
-gram of study; up to $4,650 a year for full-time attendance in a 2-year pro=
-gram of study.
+Amount: Up to $5,250 a year for full-time attendance in a 4-year program of study; up to $4,650 a year for full-time attendance in a 2-year program of study.
 
 ### CHESLA Loan Program
 
 Who is Eligible
 
-Families with a student enrolled at least half-time in a CT non-prof=
-it college or a CT resident enrolled at least half-time in a non-profit col=
-lege    anywhere in the U.S.
+Families with a student enrolled at least half-time in a CT non-profit college or a CT resident enrolled at least half-time in a non-profit college    anywhere in the U.S.
 
 Amounts
 
-May annually borrow up to full cost of education less other aid at a=
- low fixed interest rate. Graduate and professional students may capitalize=
- interest while in school. Upon completion of college, the loan is paid    =
-off over 140 months.
+May annually borrow up to full cost of education less other aid at a low fixed interest rate. Graduate and professional students may capitalize interest while in school. Upon completion of college, the loan is paid    off over 140 months.
 
 ## Scholarship of the Day
 
@@ -133,8 +113,7 @@ off over 140 months.
 
 #### Connect With Us
 
-=C2=A9 Copyright 2025. TF=
-S Scholarships. All rights reserved. Copyright / Privacy Policy
+=C2=A9 Copyright 2025. TFS Scholarships. All rights reserved. Copyright / Privacy Policy
 
 ## Quick Links
 
@@ -165,15 +144,13 @@ Connect with us:
 
 <!-- image -->
 
-###### How to=
- Win a Scholarship
+###### How to Win a Scholarship
 
 =09
 
 <!-- image -->
 
-###### Scholar=
-ship Opportunity
+###### Scholarship Opportunity
 
 =09
 
@@ -191,7 +168,6 @@ ship Opportunity
 
 <!-- image -->
 
-=C2=A92018 Tuition Funding Sources - All rights=
- reserved.						=09
+=C2=A92018 Tuition Funding Sources - All rights reserved.						=09
 
 =20

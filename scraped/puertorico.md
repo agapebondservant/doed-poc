@@ -1,17 +1,10 @@
 # Financial Aid
 
-A college education has become a significant expense for most families a=
-nd requires careful planning. Whatever your financial situation is, we enco=
-urage you to use this information to help you understand college funding so=
- you can navigate the financial aid process with greater ease.
+A college education has become a significant expense for most families and requires careful planning. Whatever your financial situation is, we encourage you to use this information to help you understand college funding so you can navigate the financial aid process with greater ease.
 
 ## State Financial Aid
 
-States provide many financial aid opportunities to help ease the cost of=
- a college education. Please select the state you reside in to learn about =
-state sponsored internships, scholarships and financial aid programs for un=
-dergraduate students and assistantships, fellowships, and residency program=
-s for graduate and professional students.
+States provide many financial aid opportunities to help ease the cost of a college education. Please select the state you reside in to learn about state sponsored internships, scholarships and financial aid programs for undergraduate students and assistantships, fellowships, and residency programs for graduate and professional students.
 
 - Alabama
 - Alaska
@@ -92,8 +85,7 @@ s for graduate and professional students.
 
 #### Connect With Us
 
-=C2=A9 Copyright 2025. TF=
-S Scholarships. All rights reserved. Copyright / Privacy Policy
+=C2=A9 Copyright 2025. TFS Scholarships. All rights reserved. Copyright / Privacy Policy
 
 ## Quick Links
 
@@ -124,15 +116,13 @@ Connect with us:
 
 <!-- image -->
 
-###### How to=
- Win a Scholarship
+###### How to Win a Scholarship
 
 =09
 
 <!-- image -->
 
-###### Scholar=
-ship Opportunity
+###### Scholarship Opportunity
 
 =09
 
@@ -150,7 +140,6 @@ ship Opportunity
 
 <!-- image -->
 
-=C2=A92018 Tuition Funding Sources - All rights=
- reserved.						=09
+=C2=A92018 Tuition Funding Sources - All rights reserved.						=09
 
 =20
