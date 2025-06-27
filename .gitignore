@@ -5,3 +5,4 @@ resources/studentaid/.DS_Store resources/studentaid/handbook/.DS_Store
 resources/studentaid/.DS_Store resources/studentaid/handbook/.DS_Store
 resources/studentaid/.DS_Store
 resources/studentaid/handbook/.DS_Store
+.env
