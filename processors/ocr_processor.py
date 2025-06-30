@@ -59,29 +59,23 @@ class OcrProcessor:
                             
 if __name__ == "__main__":              
     processor = OcrProcessor()
-    # input_dirs = \
-    # [f"{os.path.expanduser('~')}/doed-poc/resources/studentaid/handbook/application and verification",
-    # f"{os.path.expanduser('~')}/doed-poc/resources/studentaid/handbook/volume 3",
-    # f"{os.path.expanduser('~')}/doed-poc/resources/studentaid/handbook/volume 7",
-    # f"{os.path.expanduser('~')}/doed-poc/resources/studentaid/handbook/volume 8",
-    # f"{os.path.expanduser('~')}/doed-poc/resources/studentaid/state scholarships"]
-    # output_dirs = \
-    # [f"{os.path.expanduser('~')}/doed-poc/scraped/studentaid/handbook/application and verification",
-    # f"{os.path.expanduser('~')}/doed-poc/scraped/studentaid/handbook/volume 3",
-    # f"{os.path.expanduser('~')}/doed-poc/scraped/studentaid/handbook/volume 7",
-    # f"{os.path.expanduser('~')}/doed-poc/scraped/studentaid/handbook/volume 8",
-    # f"{os.path.expanduser('~')}/doed-poc/scraped/studentaid/state scholarships"]
-    # review_dirs = \
-    # [f"{os.path.expanduser('~')}/doed-poc/tables",
-    # f"{os.path.expanduser('~')}/doed-poc/tables",
-    # f"{os.path.expanduser('~')}/doed-poc/tables",
-    # f"{os.path.expanduser('~')}/doed-poc/tables",
-    # f"{os.path.expanduser('~')}/doed-poc/tables"]
     input_dirs = \
-    [f"{os.path.expanduser('~')}/doed-poc/resources/studentaid/state scholarships"]
+    [f"{Path.cwd()}/resources/studentaid/handbook/application and verification",
+    f"{Path.cwd()}/resources/studentaid/handbook/volume 3",
+    f"{Path.cwd()}/resources/studentaid/handbook/volume 7",
+    f"{Path.cwd()}/resources/studentaid/handbook/volume 8",
+    f"{Path.cwd()}/resources/studentaid/state scholarships"]
     output_dirs = \
-    [f"{os.path.expanduser('~')}/doed-poc/scraped/studentaid/state scholarships"]
+    [f"{Path.cwd()}/scraped/studentaid/handbook/application and verification",
+    f"{Path.cwd()}/scraped/studentaid/handbook/volume 3",
+    f"{Path.cwd()}/scraped/studentaid/handbook/volume 7",
+    f"{Path.cwd()}/scraped/studentaid/handbook/volume 8",
+    f"{Path.cwd()}/scraped/studentaid/state scholarships"]
     review_dirs = \
-    [f"{os.path.expanduser('~')}/doed-poc/tables"]
+    [f"{Path.cwd()}/tables",
+    f"{Path.cwd()}/tables",
+    f"{Path.cwd()}/tables",
+    f"{Path.cwd()}/tables",
+    f"{Path.cwd()}/tables"]
     for input_dir, output_dir, review_dir in zip(input_dirs, output_dirs, review_dirs):
         processor.process(input_dir, output_dir, review_dir)
