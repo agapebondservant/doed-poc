@@ -21,43 +21,35 @@ importlib.reload(splitter_processor)
 load_dotenv()
 
 class VectorDbProcessor:
-    def __init__(self, **kwargs):
+    def __init__(self, llm: str, embed_model: str, **kwargs):
         """
-        Initialize vector db indexing settings.
-        """
-        print("Initializing Vector DB/LLM settings...")
-        self.initialize_db_settings(**kwargs)
-        
-        """
-        Initialize the OCR processor.
+        Initialize relevant settings for LLMs, OCR and Splitter.
         """
         print("Initializing OCR Processor...")
         self.ocr = ocr_processor.OcrProcessor()
 
         print("Initializing splitter...")
         self.splitter = splitter_processor.SplitterProcessor()
-
-        if 'source_dir' in kwargs and 'collection_name' in kwargs:
-            self.load_documents(kwargs['source_dir'], kwargs['collection_name'])
+        
+        print("Initializing Vector DB/LLM settings...")
+        self.initialize_db_settings(llm, embed_model, **kwargs)
             
-    def initialize_db_settings(self, **kwargs):
-        if 'llm' in kwargs:
-            print("Initializing settings for LLM model...")
-            self.llm = OpenAI(
-                model=kwargs['llm'], 
-                temperature=0.1,
-                api_key=os.getenv('GRANITE_API_KEY'),
-                base_url=os.getenv('GRANITE_API_BASE'),
-            )
+    def initialize_db_settings(self, llm: str, embed_model: str, **kwargs):
+        print("Initializing settings for LLM model...")
+        self.llm = OpenAI(
+            model=llm, 
+            temperature=0.1,
+            api_key=os.getenv('GRANITE_API_KEY'),
+            base_url=os.getenv('GRANITE_API_BASE'),
+        )
             
-        if 'embed_model' in kwargs:
-            print("Initializing embedding model...")
-            self.embed_model = OpenAIEmbeddings(
-                api_key=os.getenv('EMBED_API_KEY'),
-                base_url=os.getenv('EMBED_API_BASE'),
-                dimensions=768,
-                model="nomic-embed-text-v1.5",
-            )
+        print("Initializing embedding model...")
+        self.embed_model = OpenAIEmbeddings(
+            api_key=os.getenv('EMBED_API_KEY'),
+            base_url=os.getenv('EMBED_API_BASE'),
+            dimensions=768,
+            model=embed_model,
+        )
         
         print(f"Initializing ChromaDb Client...")
         # self.chroma_client = chromadb.HttpClient(host= f"http://{os.getenv('CHROMA_API_BASE')}")
@@ -68,6 +60,9 @@ class VectorDbProcessor:
             client=self.chroma_client,
             embedding_function=self.embed_model,
         )
+
+        if 'source_dir' in kwargs and 'collection_name' in kwargs:
+            self.load_documents(kwargs['source_dir'], kwargs['collection_name'])
 
     def load_documents(self, source_dir: str, collection_name: str):
         print(f"Creating collection {collection_name} (if it does not exist)...")
