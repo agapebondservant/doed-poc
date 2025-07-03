@@ -7,3 +7,4 @@ resources/studentaid/.DS_Store
 resources/studentaid/handbook/.DS_Store
 .env
 db/
+openshift/wb-secret.yaml

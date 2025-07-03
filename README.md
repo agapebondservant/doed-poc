@@ -14,9 +14,22 @@ oc expose service chroma-chromadb
 
 ```
 source .env
+cd docker
 podman build -t quay.io/oawofolurh/agentic-wb:latest .
 podman push quay.io/oawofolurh/agentic-wb:latest
+cd -
 ```
+
+## Deploy Workbench
+* Use the image built above to import a new notebook image
+	* Attach a GPU accelerator profile if one exists
+2. When creating the workbench in the Web GUI Console:
+	* Use the following script to generate the **wb-secret.yaml** file to attach to the workbench:
+	
+	```
+	oc create secret generic data-prep-wb --from-env-file .env
+	oc get secret data-prep-wb -oyaml > openshift/wb-secret.yaml
+	```
 
 ## Deploy App
 
