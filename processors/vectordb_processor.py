@@ -1,6 +1,6 @@
-# __import__('pysqlite3')
-# import sys
-# sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import importlib
 import traceback
 import chromadb
@@ -52,8 +52,8 @@ class VectorDbProcessor:
         )
         
         print(f"Initializing ChromaDb Client...")
-        # self.chroma_client = chromadb.HttpClient(host= f"http://{os.getenv('CHROMA_API_BASE')}")
-        self.chroma_client = chromadb.PersistentClient(path=f"{Path.cwd()}/db")
+        self.chroma_client = chromadb.HttpClient(host= f"http://{os.getenv('CHROMA_API_BASE')}")
+        # self.chroma_client = chromadb.PersistentClient(path=f"{Path.cwd()}/db")
             
         print(f"Initializing Vector Store...")
         self.vector_store = Chroma(
@@ -65,13 +65,15 @@ class VectorDbProcessor:
             self.load_documents(kwargs['source_dir'], kwargs['collection_name'])
 
     def load_documents(self, source_dir: str, collection_name: str):
+        
         print(f"Creating collection {collection_name} (if it does not exist)...")
         
         chroma_collection = self.chroma_client.get_or_create_collection(collection_name)
 
-        print(f"Loading documents into collection {collection_name}...")
+        print(f"Loading documents from {source_dir} into collection {collection_name}...")
         
         try:
+
             for root, _, source_files in os.walk(source_dir):
                 
                 for source_file in source_files:
@@ -107,7 +109,7 @@ class VectorDbProcessor:
 
 if __name__ == "__main__":  
     
-    source_dir = f"{Path.cwd()}/scraped/studentaid"
+    source_dir = f"{os.path.expanduser('~')}/{os.getenv('APP_NAME')}/scraped/studentaid"
     
     processor = VectorDbProcessor(llm='granite-3-8b-instruct',
                                   embed_model='nomic-embed-text-v1.5',
