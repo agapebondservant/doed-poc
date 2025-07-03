@@ -6,9 +6,16 @@
 oc new-project chroma
 helm repo add chroma https://amikos-tech.github.io/chromadb-chart/
 helm repo update
-helm search repo chroma/
 helm install chroma chroma/chromadb
 oc expose service chroma-chromadb
+```
+
+## Build Custom Workbench Image
+
+```
+source .env
+podman build -t quay.io/oawofolurh/agentic-wb:latest .
+podman push quay.io/oawofolurh/agentic-wb:latest
 ```
 
 ## Deploy App
