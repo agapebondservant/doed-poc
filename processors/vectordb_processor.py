@@ -13,13 +13,20 @@ from langchain.chains import RetrievalQA
 from langchain_core.documents import Document
 from langchain_openai import OpenAI, OpenAIEmbeddings
 from langchain_chroma import Chroma
+from langchain.chains.query_constructor.schema import AttributeInfo
+from langchain.retrievers.self_query.base import SelfQueryRetriever
+from langchain_core.structured_query import StructuredQuery
 from chromadb.config import Settings
 from uuid import uuid4
 from pathlib import Path
 from dotenv import load_dotenv
+import us_states
 importlib.reload(ocr_processor)
 importlib.reload(splitter_processor)
+importlib.reload(us_states)
 load_dotenv()
+
+DEFAULT_LANGCHAIN_COLLECTION_NAME='langchain'
 
 class VectorDbProcessor:
     def __init__(self, llm: str, embed_model: str, **kwargs):
@@ -64,10 +71,7 @@ class VectorDbProcessor:
             collection_name=kwargs.get('collection_name') or 'langchain',
         )
 
-        if 'source_dir' in kwargs and 'collection_name' in kwargs:
-            self.load_documents(kwargs['source_dir'], kwargs['collection_name'])
-
-    def load_documents(self, source_dir: str, collection_name: str):
+    def process(self, source_dir: str, collection_name: str):
         
         print(f"Creating collection {collection_name} (if it does not exist)...")
         
@@ -83,7 +87,10 @@ class VectorDbProcessor:
                 
                     chunks = self.splitter.process(os.path.join(root,source_file))
                     
-                    documents = [Document(id=str(uuid4()), page_content=chunk) for chunk in chunks]
+                    documents = [Document(id=str(uuid4()), 
+                                          page_content=chunk, 
+                                          metadata={"source_file": source_file, "state": us_states.find_state_in_text(source_file)}) 
+                                 for chunk in chunks]
                     
                     self.vector_store.add_documents(documents=documents)
                 
@@ -92,23 +99,7 @@ class VectorDbProcessor:
             print(f"Error loading docs: {e}") 
             
             traceback.print_exc()
-        
-    def process(self, collection_name: str = None, prompt: str = None ): 
-        
-        try:
-            chroma_collection = self.chroma_client.get_or_create_collection(collection_name)
-            
-            print(f"Performing query on collection {collection_name} ({chroma_collection.count()} docs total)...")
-            
-            results = self.vector_store.similarity_search(prompt, k=3)
-            
-            for res in results:
-                print(f"* {res.page_content} [{res.metadata}]")
-                
-        except Exception as e:
-            print(f"Error converting source doc: {e}") 
-            
-            traceback.print_exc()
+
 
 if __name__ == "__main__":  
     
@@ -117,6 +108,15 @@ if __name__ == "__main__":
     processor = VectorDbProcessor(llm='granite-3-8b-instruct',
                                   embed_model='nomic-embed-text-v1.5',
                                   collection_name='scholarships',)
-                                  # source_dir=source_dir,)
     
-    processor.process(collection_name="scholarships", prompt="What are the academic year requirements for scholarships in Maryland?")
+    processor.process(source_dir=source_dir, collection_name=collection_name)
+
+if __name__ == "__main__":  
+    
+    source_dir = f"{os.path.expanduser('~')}/{os.getenv('APP_NAME')}/scraped/studentaid"
+    
+    processor = VectorDbProcessor(llm='granite-3-8b-instruct',
+                                  embed_model='nomic-embed-text-v1.5',
+                                  collection_name='scholarships',)
+    
+    processor.process(source_dir=source_dir, collection_name=collection_name)
