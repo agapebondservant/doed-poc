@@ -13,6 +13,7 @@ from langchain.chains import RetrievalQA
 from langchain_core.documents import Document
 from langchain_openai import OpenAI, OpenAIEmbeddings
 from langchain_chroma import Chroma
+from chromadb.config import Settings
 from uuid import uuid4
 from pathlib import Path
 from dotenv import load_dotenv
@@ -52,13 +53,15 @@ class VectorDbProcessor:
         )
         
         print(f"Initializing ChromaDb Client...")
-        self.chroma_client = chromadb.HttpClient(host= f"http://{os.getenv('CHROMA_API_BASE')}")
+        self.chroma_client = chromadb.HttpClient(host= f"http://{os.getenv('CHROMA_API_BASE')}", settings=Settings(allow_reset=True))
         # self.chroma_client = chromadb.PersistentClient(path=f"{Path.cwd()}/db")
             
         print(f"Initializing Vector Store...")
         self.vector_store = Chroma(
             client=self.chroma_client,
             embedding_function=self.embed_model,
+            persist_directory='/data',
+            collection_name=kwargs.get('collection_name') or 'langchain',
         )
 
         if 'source_dir' in kwargs and 'collection_name' in kwargs:
@@ -97,7 +100,7 @@ class VectorDbProcessor:
             
             print(f"Performing query on collection {collection_name} ({chroma_collection.count()} docs total)...")
             
-            results = self.vector_store.similarity_search(prompt, k=2)
+            results = self.vector_store.similarity_search(prompt, k=3)
             
             for res in results:
                 print(f"* {res.page_content} [{res.metadata}]")
@@ -113,7 +116,7 @@ if __name__ == "__main__":
     
     processor = VectorDbProcessor(llm='granite-3-8b-instruct',
                                   embed_model='nomic-embed-text-v1.5',
-                                  source_dir=source_dir, 
                                   collection_name='scholarships',)
+                                  # source_dir=source_dir,)
     
-    processor.process(collection_name="scholarships", prompt="What are the academic year requirements for scholarships in West Virginia?")
+    processor.process(collection_name="scholarships", prompt="What are the academic year requirements for scholarships in Maryland?")
