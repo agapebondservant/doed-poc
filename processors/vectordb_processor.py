@@ -20,6 +20,7 @@ from langchain_core.structured_query import StructuredQuery
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_openai import ChatOpenAI
 from chromadb.config import Settings
 from uuid import uuid4
 from pathlib import Path
@@ -48,7 +49,7 @@ class VectorDbProcessor:
             
     def initialize_db_settings(self, llm: str, embed_model: str, **kwargs):
         print("Initializing settings for LLM model...")
-        self.llm = VLLMOpenAI(
+        self.llm = ChatOpenAI(
             model=llm, 
             temperature=0.1,
             api_key=os.getenv('GRANITE_API_KEY'),
@@ -131,10 +132,10 @@ if __name__ == "__main__":
     
     source_dir = f"{os.path.expanduser('~')}/{os.getenv('APP_NAME')}/scraped/studentaid"
     
-    processor = VectorDbProcessor(llm='granite-3-8b-instruct',
+    processor = VectorDbProcessor(llm='granite-3-3-8b-instruct',
                                   embed_model='nomic-embed-text-v1.5',
                                   collection_name='scholarships',)
     
-    # processor.load_documents(source_dir=source_dir, collection_name=collection_name)
+    # processor.load_documents(source_dir=source_dir, collection_name=collection_name) # Loads documents into db index
 
-    processor.process(prompt_input="What kinds of scholarships are available for veterans in Kentucky?")
+    print(processor.process(prompt_input="What kinds of scholarships are available for veterans in Kentucky?"))

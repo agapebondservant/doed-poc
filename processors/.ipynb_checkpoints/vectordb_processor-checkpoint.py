@@ -12,10 +12,15 @@ import shutil
 from langchain.chains import RetrievalQA 
 from langchain_core.documents import Document
 from langchain_openai import OpenAI, OpenAIEmbeddings
+from langchain_community.llms.vllm import VLLMOpenAI
 from langchain_chroma import Chroma
 from langchain.chains.query_constructor.schema import AttributeInfo
 from langchain.retrievers.self_query.base import SelfQueryRetriever
 from langchain_core.structured_query import StructuredQuery
+from langchain.chains import create_retrieval_chain
+from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_openai import ChatOpenAI
 from chromadb.config import Settings
 from uuid import uuid4
 from pathlib import Path
@@ -44,7 +49,7 @@ class VectorDbProcessor:
             
     def initialize_db_settings(self, llm: str, embed_model: str, **kwargs):
         print("Initializing settings for LLM model...")
-        self.llm = OpenAI(
+        self.llm = ChatOpenAI(
             model=llm, 
             temperature=0.1,
             api_key=os.getenv('GRANITE_API_KEY'),
@@ -69,9 +74,9 @@ class VectorDbProcessor:
             embedding_function=self.embed_model,
             persist_directory='/data',
             collection_name=kwargs.get('collection_name') or 'langchain',
-        )
+        )        
 
-    def process(self, source_dir: str, collection_name: str):
+    def load_documents(self, source_dir: str, collection_name: str):
         
         print(f"Creating collection {collection_name} (if it does not exist)...")
         
@@ -100,23 +105,37 @@ class VectorDbProcessor:
             
             traceback.print_exc()
 
+    def process(self, prompt_input: str) -> str:
+        try:
+            system_prompt_text = """Answer any use questions based solely on the context below:
+            <context>{context}</context>
+            """
+            
+            user_prompt_text = """{input}"""
+    
+            prompt = ChatPromptTemplate([
+                ("system", system_prompt_text),
+                ("human", user_prompt_text),
+            ])
+            
+            combine_docs_chain = create_stuff_documents_chain(self.llm, prompt)
+            
+            qa_chain = create_retrieval_chain(self.vector_store.as_retriever(), combine_docs_chain)
+    
+            return qa_chain.invoke({"input": prompt_input})
+        except Exception as e: 
+            print(f"Error loading docs: {e}") 
+            
+            traceback.print_exc()
 
 if __name__ == "__main__":  
     
     source_dir = f"{os.path.expanduser('~')}/{os.getenv('APP_NAME')}/scraped/studentaid"
     
-    processor = VectorDbProcessor(llm='granite-3-8b-instruct',
+    processor = VectorDbProcessor(llm='granite-3-3-8b-instruct',
                                   embed_model='nomic-embed-text-v1.5',
                                   collection_name='scholarships',)
     
-    processor.process(source_dir=source_dir, collection_name=collection_name)
+    # processor.load_documents(source_dir=source_dir, collection_name=collection_name) # Loads documents into db index
 
-if __name__ == "__main__":  
-    
-    source_dir = f"{os.path.expanduser('~')}/{os.getenv('APP_NAME')}/scraped/studentaid"
-    
-    processor = VectorDbProcessor(llm='granite-3-8b-instruct',
-                                  embed_model='nomic-embed-text-v1.5',
-                                  collection_name='scholarships',)
-    
-    processor.process(source_dir=source_dir, collection_name=collection_name)
+    print(processor.process(prompt_input="What kinds of scholarships are available for veterans in Kentucky?"))
