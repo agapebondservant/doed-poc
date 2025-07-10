@@ -105,9 +105,9 @@ class VectorDbProcessor:
             
             traceback.print_exc()
 
-    def process(self, prompt_input: str) -> str:
+    def process(self, prompt_input: str, system_prompt_input:str = None) -> str:
         try:
-            system_prompt_text = """Answer any use questions based solely on the context below:
+            system_prompt_text = system_prompt or """Answer any use questions based solely on the context below:
             <context>{context}</context>
             """
             
