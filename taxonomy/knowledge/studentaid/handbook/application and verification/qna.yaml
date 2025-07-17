@@ -1,473 +1,427 @@
 ---
 version: 3
-domain: Employee Compliance
-created_by: oawofolu
+domain: ''
+created_by: ''
 seed_examples:
-  - context: |
-      ## Introduction: Protecting Cardholder Data with PCI Security Standards
-      The twentieth century U.S. criminal Willie Sutton was said to rob banks because
-      'that's where the money is.' The same motivation in our digital age makes merchants
-      the new target for financial fraud. Occasionally lax security by some merchants
-      enables criminals to easily steal and use personal consumer financial information
-      from payment card transactions and processing systems.
-      It's a serious problem - more than 510 million records with sensitive information
-      have been breached since January 2005, according to PrivacyRights.org. As a merchant,
-      you are at the center of payment card transactions so it is imperative that you use
-      standard security procedures and technologies to thwart theft of cardholder data.
-      Merchant-based vulnerabilities may appear almost anywhere in the card-processing ecosystem
-      including point-of-sale devices; personal computers or servers; wireless hotspots
-      or Web shopping applications; in paper-based storage systems; and unsecured transmission
-      of cardholder data to service providers. Vulnerabilities may even extend to systems operated
-      by service providers and acquirers, which are the financial institutions that initiate and
-      maintain the relationships with merchants that accept payment cards (see diagram on page 5).
-      include merchants, payment card issuing banks, processors, developers and other vendors.
-      There are three ongoing steps for adhering to the PCI DSS: Assess - identifying cardholder data,
-      taking an inventory of your IT assets and business processes for payment card processing,
-      and analyzing them for vulnerabilities that could expose cardholder data. Remediate -
-      fixing vulnerabilities and not storing cardholder data unless you need it. Report -
-      compiling and submitting required remediation validation records (if applicable), and submitting
-      compliance reports to the acquiring bank and card brands you do business with.
-      PCI DSS follows common sense steps that mirror best security practices. The DSS globally
-      applies to all entities that store, process or transmit cardholder data. PCI DSS and related
-      security standards are administered by the PCI Security Standards Council, which was founded
-      by American Express, Discover Financial Services, JCB International, MasterCard Worldwide and
-      Visa Inc. Participating Organizations include merchants, payment card issuing banks, processors,
-      developers and other vendors.
+  - context: |-
+      Introduction This guide is intended for college
+      financial aid administrators and counselors who
+      help students with the financial aid
+      process4completing the Free Application for Federal
+      Student Aid (FAFSA ® ) form, verifying information,
+      and making corrections and other changes to the
+      information reported on the FAFSA form.
+      Throughout the Federal Student Aid Handbook, we
+      use <college,= <school,= and <institution=
+      interchangeably unless a more specific use is given.
+      Similarly, <student,= <applicant,= and <aid
+      recipient= are synonyms. <Parents= in this
+      volume refers to the legal parents of dependent
+      students, and <you= refers to the
+      primary audience of the Handbook: financial
+      aid administrators at colleges. <We= indicates
+      the U.S. Department of Education (the
+      Department, ED), and <federal student aid= and
+      <Title IV aid= are synonymous terms for
+      the financial aid offered by the Department.
     questions_and_answers:
-      - question: |
-          Why are PCI Security Standards necessary?
-        answer: |
-          PCI Security Standards are necessary to protect cardholder data from merchant-based
-          activities that can make it vulnerable to fraud and theft.
-      - question: |
-          What are the three ongoing steps for PCI DSS compliance?
-        answer: |
-          The three ongoing steps for PCI DSS compliance are:
-          - Assess: Identifying and analyzing cardholder data for any vulnerabilities.
-          - Remediate: Finding and fixing vulnerabilities in the cardholder data.
-          - Report: Generating and submitting required validation and compliance reports
-          to the partnering banks and card brands.
-      - question: |
-          What activities can cause cardholder data to be exposed to theft or fraud?
-        answer: |
-          Cardholder data can be exposed through merchant-based activities at any point in the
-          card-holding system, such as point-of-sale devices, personal computers or servers, wireless hotspots,
-          Web shopping applications, paper-based storage systems, and unsecured cardholder data
-          transmission to service providers.
-  - context: |
-      ## overview of PCI Requirements
-      PCI security standards are technical and operational requirements set by the PCI Security
-      Standards Council (PCI SSC) to protect cardholder data. The standards apply to all entities
-      that store, process or transmit cardholder data - with guidance for software developers and
-      manufacturers of applications and devices used in those transactions. The Council is responsible
-      for managing the security standards, while compliance with the PCI set of standards is enforced
-      by the founding members of the Council, American Express, Discover Financial Services, JCB International,
-      MasterCard Worldwide and Visa Inc.
-      ## PAYMENT CARD INDUSTRY SECURITY STANDARDS
-      ## PCI Security Standards Include:
-      ## PCI Data Security Standard (DSS)
-      The PCI DSS applies to all entities that store, process, and/or transmit cardholder data.
-      It covers technical and operational system components included in or connected to cardholder data.
-      If you are a merchant who accepts or processes payment cards, you must comply with the PCI DSS.
-      ## PIN Transaction Security (PTS) Requirements
-      The PCI PTS (formerly PCI PED) is a set of security requirements focused on characteristics and management
-      of devices used in the protection of cardholder PINs and other payment processing related activities.
-      The requirements are for manufacturers to follow in the design, manufacture and transport of a device to the entity
-      that implements it. Financial institutions, processors, merchants and service providers should only use
-      devices or components that are tested and approved by the PCI SSC.
-      ## Payment Application Data Security Standard (PA-DSS)
-      The PA-DSS is for software developers and integrators of payment applications that store,
-      process or transmit cardholder data as part of authorization or settlement when these
-      applications are sold, distributed or licensed to third parties. Most card brands encourage
-      merchants to use payment applications that are tested and approved by the PCI SSC.
-      The Council monitors new threats to cardholder data and may issue information supplements and
-      other guidance for compliance. Changes to the PCI Security Standards follow a three-year lifecycle;
-      the newest (version 2.0) was published in October 2010.
-      This Guide provides supplemental information that does not replace or supersede PCI SSC Security Standards
-      or their supporting documents.
+      - question: Who is the intended audience for this guide?
+        answer: The guide is intended for college financial aid administrators
+          and counselors.
+      - question: What does the guide cover regarding the financial aid process?
+        answer: The guide covers completing the Free Application for Federal
+          Student Aid (FAFSA) form, verifying information, and making
+          corrections to the information reported on the FAFSA form.
+      - question: What do the terms <Parents>, <student>, <applicant>, and <aid
+          recipient> refer to in this guide?
+        answer: <Parents> refer to the legal parents of dependent students,
+          while <student>, <applicant>, and <aid recipient> are synonyms for
+          each other, representing the student seeking financial aid.
+  - context: |-
+      Changes From the FUTURE Act The Fostering
+      Undergraduate Talent by Unlocking Resources for
+      Education (FUTURE) Act authorized a direct
+      data exchange 3 the FUTURE Act Direct Data
+      Exchange (FA-DDX) 3 with the Internal
+      Revenue Service (IRS) to facilitate completing the FAFSA
+      form. The previous tool to transfer U.S.
+      income and tax information from the IRS 3
+      the IRS Data Retrieval Tool (DRT) 3 was
+      retired after the close of the 2023-24 application
+      cycle. Implementation of the FA-DDX eliminated the
+      need for most applicants (and their spouse or
+      parents) to self-report their income and tax
+      information reported to the IRS. Also, federal tax
+      information (FTI) that is transferred via the
+      FA-DDX to the FAFSA form is considered verified
+      for Title IV purposes. Unlike with the IRS-DRT,
+      which allowed applicants to opt in, the FA-DDX
+      requires applicants and contributors (student9s spouse
+      and/or parents, as appropriate) to provide
+      consent and approval for the Department to
+      obtain FTI from the IRS via the FA-DDX and use
+      it to determine the student9s eligibility
+      for federal student aid.
     questions_and_answers:
-      - question: |
-          Who is responsible for setting PCI security standards?
-        answer: |
-          PCI security standards are technical and operational requirements set by the PCI Security Standards
-          Council (PCI SSC) to protect cardholder data. The standards are applied to all entities that store,
-          process or transmit cardholder data, including manufacturers, software developers, merchants and service providers.
-      - question: |
-          Who is responsible for enforcing PCI security standards?
-        answer: |
-          PCI security standards are enforced by founding members of the PCI Security Standards Council.
-          This includes American Express, Discover Financial Services, JCB International, MasterCard Worldwide and Visa Inc.
-      - question: |
-          What standards are covered under PCI security standards?
-        answer: |
-          The standards covered under PCI security standards include:
-          - PCI Data Security Standard (DSS): These are PCI security standards that apply to all entities that
-          store, process, and/or transmit cardholder data.
-          - PIN Transaction Security (PTS) Requirements: These are PCI security standards that
-          apply to manufacturers of devices that store cardholder PINs and similar cardholder payment related activities.
-          - Payment Application Data Security Standard (PA-DSS): These are PCI security standards
-          that apply to software developers and integrators of payment applications that are
-          responsible for storing, processing or transmitting cardholder data.
-  - context: |
-      ## The PCI Data Security Standard
-      PCI DSS is the global data security standard adopted by the payment card brands for all entities that
-      process, store or transmit cardholder data.  It consists of common sense steps that mirror security best practices.
-      | Goals                                        | PCI DSS Requirements                                                                                                                                                       |
-      |----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-      | Build and Maintain a Secure  Network         | 1.  Install and maintain a firewall configuration to protect cardholder  data 2.  Do not use vendor-supplied defaults for system passwords and other  security parameters  |
-      | Protect Cardholder Data                      | 3.  Protect stored cardholder data 4.  Encrypt transmission of cardholder data across open, public networks                                                                |
-      | Maintain a Vulnerability  Management Program | 5.  Use and regularly update anti-virus software or programs 6.  Develop and maintain secure systems and applications                                                      |
-      | Implement Strong Access  Control Measures    | 7.  Restrict access to cardholder data by business need to know 8.  Assign a unique ID to each person with computer access 9.  Restrict physical access to cardholder data |
-      | Regularly Monitor and Test  Networks         | 10. Track and monitor all access to network resources and cardholder data 11.  Regularly test security systems and processes                                              |
-      | Maintain an Information  Security Policy     | 12. Maintain a policy that addresses information security for all personnel
+      - question: What is the FUTURE Act Direct Data Exchange (FA-DDX) and what
+          does it do?
+        answer: The FA-DDX is a direct data exchange authorized by the FUTURE
+          Act between the Department of Education and the Internal Revenue
+          Service (IRS) to facilitate completing the FAFSA form. It eliminates
+          the need for most applicants to self-report income and tax
+          information, as federal tax information is transferred directly and
+          considered verified for Title IV purposes.
+      - question: How does the FA-DDX differ from the IRS Data Retrieval Tool
+          (DRT) in terms of consent?
+        answer: Unlike the IRS-DRT, which allowed applicants to opt-in, the
+          FA-DDX requires applicants and contributors (student's spouse and/or
+          parents) to provide explicit consent and approval for the Department
+          to obtain federal tax information from the IRS via the FA-DDX and use
+          it to determine the student's eligibility for federal student aid.
+      - question: When was the IRS Data Retrieval Tool (DRT) retired and what
+          replaced it?
+        answer: The IRS Data Retrieval Tool (DRT) was retired after the close of
+          the 2023-24 application cycle. It was replaced by the FUTURE Act
+          Direct Data Exchange (FA-DDX), which provides a direct data exchange
+          between the Department of Education and the IRS to facilitate FAFSA
+          completion.
+  - context: |-
+      Chapter 2: Filling Out the FAFSA - We added a
+      section on signatures which describes the
+      appropriate use of the signature page from
+      the FAFSA Partner Portal (FPP). - We expanded the
+      <Student Tax Filing Status (19)= section to
+      include subsections on (1) nontax filers, foreign
+      countries, and international organizations and (2)
+      fiscal year tax returns. - We updated the tax line
+      number used for education credits to IRS Form
+      1040: line 29 + IRS Form 1040 Schedule
+      3: line 3. - We moved the section on foreign earned
+      income exclusion to Chapter 5. - We expanded
+      <Parent Tax Filing Status (37)= section to
+      explain the six answer options on the FAFSA form
+      and when each answer should be selected. This
+      section also explains when an answer to this
+      question might be conflicting information that
+      requires resolution (comment code 303).
     questions_and_answers:
-      - question: |
-          What are the goals of the PCI Data Security Standard?
-        answer: |
-          The goals of the PCI Data Security Standard are:
-          - Building and maintaining a secure network
-          - Protecting cardholder data
-          - Maintaining a vulnerability management program
-          - Implementing strong access control measures
-          - Regularly monitoring and testing networks
-          - Maintaining an information security policy
-      - question: |
-          What are the PCI DSS Requirements that address the security goal of building a secure network for transmitting cardholder data?
-        answer: |
-          The PCI DSS Requirements that cover the security goal of building a secure network are:
-          - Installing a firewall configuration to protect cardholder data
-          - Avoiding vendor-supplied defaults for system passwords and other security parameters
-      - question: |
-          What are the PCI DSS Requirements that address the security goal of protecting cardholder data?
-        answer: |
-          The PCI DSS Requirements that cover the security goal of protecting cardholder data are:
-          - Protecting stored cardholder data
-          - Encrypting the transmission of cardholder data across public networks
-  - context: |
-      For more than 160 years, PNC has demonstrated a commitment to performance and integrity.
-      This commitment has not diminished as we have grown to become a leading financial services company.
-      Our Values and our Code of Business Conduct and Ethics serve as our guides to conducting business with the highest integrity
-      and the highest ethical standards. PNC has seven enduring core values that continue to serve us well:
-      Customer Focus, Diversity and Inclusion, Integrity, Performance, Quality of Life, Respect, and Teamwork.
-      These values reflect our culture and direct our day-to-day actions with customers, employees, and stakeholders.
-      Our Values reflect PNC's culture and serve to direct our day-to-day actions with customers and colleagues.
-      Similarly, PNC's Code of Business Conduct and Ethics and related policies provide important guidance in conducting our daily affairs.
-      They apply to all employees and directors of PNC. As a team, we have worked very hard to build a successful and well-respected company.
-      We simply cannot - and will not - tolerate unethical or inappropriate behavior.
-      Remember, if you have a question or concern about what is proper conduct for you or anyone else,
-      you may always talk to your supervisor, the Employee Relations Information Center ('ERIC') at 1-877-968-7762,
-      or the Corporate Ethics Office at 412-768-8507. You may also report possible violations by calling the
-      PNC Business Conduct and Ethics Hotline at 1-866-785-9753,
-      where you may choose to remain anonymous.
+      - question: What changes were made to the FAFSA guide regarding student
+          tax filing status?
+        answer: The FAFSA guide now includes subsections on nontax filers,
+          foreign countries and international organizations, and fiscal year tax
+          returns under the Student Tax Filing Status section.
+      - question: How has the tax line number for education credits been updated
+          in the FAFSA guide?
+        answer: 'The tax line number for education credits has been updated to IRS
+          Form 1040: line 29 + IRS Form 1040 Schedule 3: line 3.'
+      - question: What modifications were implemented for the Parent Tax Filing
+          Status section in the FAFSA guide?
+        answer: The Parent Tax Filing Status section has been expanded to
+          explain the six answer options on the FAFSA form and when each should
+          be selected, as well as addressing conflicting information that
+          requires resolution (comment code 303).
+  - context: |-
+      Chapter 4: Verification, Updates, and Corrections -
+      We added a note regarding the unavailability
+      of the Verification of Identity functionality
+      in the FPP and the flexibility the Department
+      provided around reporting timeframes. - We added a
+      note to the <Using the Tax Return=
+      section regarding the treatment negative values
+      when calculating Income Earned from Work. - We renamed
+      the <Special Cases= section to <Unique
+      Situations and Exceptions= and moved
+      <Verification for Confined or Incarcerated
+      Individuals= to a subsection under this
+      renamed section. - Under <Filers of Amended Returns=,
+      we removed the exception to not update tax
+      information for certain amended tax return filers. This
+      exception was outlined in Electronic
+      Announcement GEN-24-29 and was limited to the
+      2024-25 application cycle. - We updated acceptable
+      documentation guidance for individuals who are
+      victims of tax-related identity theft. - We added
+      subsection <Birth of a Child= under the
+      <Updating Information= section.
     questions_and_answers:
-      - question: |
-          What are PNC's seven core values?
-        answer: |
-          PNC's seven core values are Customer Focus, Diversity and Inclusion, Integrity, Performance, Quality of Life, Respect, and Teamwork.
-      - question: |
-          Who does the Code of Business Conduct and Ethics apply to?
-        answer: |
-          The Code of Business Conduct and Ethics applies to all PNC employees and directors.
-      - question: |
-          Who can answer questions about our Code of Business Conduct and Ethics?
-        answer: |
-          Employees can reach out to their supervisor, the Employee Relations Information Center ('ERIC'), or the Corporate Ethics Office.
-  - context: |
-      PNC requires that all employees and directors act in the best interests of the company and its clients,
-      free from conflicts of interest. A conflict of interest arises when personal interests,
-      relationships, or outside activities influence, or appear to influence, business decisions.
-      Employees must not use their position at PNC for personal gain or advantage.
-      Any situation that creates a conflict—whether involving financial interests, outside employment,
-      or relationships with clients or vendors—must be disclosed to and reviewed by the Corporate Ethics Office.
-      If an unavoidable conflict exists, the company will determine appropriate actions to mitigate risks and
-      uphold ethical standards.
+      - question: What changes were made to the Verification of Identity
+          functionality in the FPP?
+        answer: A note was added regarding the unavailability of the
+          Verification of Identity functionality in the FPP and the flexibility
+          the Department provided around reporting timeframes.
+      - question: How were negative values treated in calculating Income Earned
+          from Work?
+        answer: A note was added to the Using the Tax Return section regarding
+          the treatment of negative values when calculating Income Earned from
+          Work.
+      - question: What modifications were done to the Special Cases section and
+          the exception for certain amended tax return filers?
+        answer: The Special Cases section was renamed to Unique Situations and
+          Exceptions, and Verification for Confined or Incarcerated Individuals
+          was moved to a subsection under this. The exception to not update tax
+          information for certain amended tax return filers was removed, as it
+          was limited to the 2024-25 application cycle.
+  - context: |-
+      The Application Process: FAFSA to ISIR The
+      laws governing the Federal Student Aid (FSA)
+      programs require that a person apply for aid
+      with a form provided by the U.S. Department
+      of Education (ED, Department) and that no
+      fee be charged for processing it. This form
+      is the Free Application for Federal Student Aid
+      (FAFSA ® ) form. To be considered for federal
+      student aid, a student must complete a FAFSA
+      form. It collects financial and other
+      information used to calculate the Student Aid
+      Index (SAI; formerly Expected Family Contribution
+      or EFC) and to determine a student9s
+      eligibility through computer matches with other
+      agencies. The FAFSA form is the only application
+      students must complete to apply for Title
+      IV aid. A school cannot require extra information
+      from students to package Title IV aid, except
+      for verification, resolution of conflicting
+      information, or professional judgment determinations.
+      However, a school may require additional
+      information for other purposes, such as packaging
+      private or institutional aid. If the school
+      collects additional information that affects Title
+      IV eligibility, it must take the information
+      into account when awarding Title IV aid.
     questions_and_answers:
-      - question: |
-          How should employees handle conflicts of interest?
-        answer: |
-          Employees must disclose any potential conflicts to the Corporate Ethics Office for review.
-      - question: |
-          What is a conflict of interest?
-        answer: |
-          A conflict of interest happens when business decisions are influenced, either in actuality or in
-          appearance, by personal interests, personal releationships or external activities.
-      - question: |
-          What happens if an unavoidable conflict exists?
-        answer: |
-          If an unavoidable conflict exists, the company will use its discretion to determine an appropriate course of action.
-  - context: |
-      PNC is committed to fostering an ethical and transparent work environment where employees
-      feel safe reporting concerns.
-      Retaliation is a serious violation of Our Values and this Code, and PNC strictly prohibits any form of retaliation, discrimination,
-      or adverse employment action against employees who make good faith reports. Regardless of the nature of the conduct reported,
-      PNC will investigate all concerns promptly and fairly. Allegations of retaliation will be taken seriously,
-      and appropriate action—including disciplinary measures up to and including termination—may be taken
-      against those responsible for retaliatory actions.
+      - question: What is the form required by law for applying for Federal
+          Student Aid (FSA) programs, and who provides it?
+        answer: The form is the Free Application for Federal Student Aid (FAFSA
+          ® ) form, provided by the U.S. Department of Education (ED,
+          Department).
+      - question: What information does the FAFSA form collect, and how is it
+          used?
+        answer: The FAFSA form collects financial and other information to
+          calculate the Student Aid Index (SAI) and determine a student's
+          eligibility for federal student aid.
+      - question: Can a school require additional information beyond the FAFSA
+          for Title IV aid, and if so, under what circumstances?
+        answer: A school may not generally require extra information for Title
+          IV aid, except for verification, resolving conflicting information, or
+          professional judgment determinations. However, additional information
+          for other purposes, like private or institutional aid, can be
+          collected, and if it affects Title IV eligibility, the school must
+          consider it when awarding aid.
+  - context: |-
+      FAFSA Online Implementation of the FAFSA Simplification
+      Act and the FUTURE Act required a
+      complete overhaul of the FAFSA form,
+      beginning with the 2024-25 award year. Submitted
+      FAFSA forms are sent directly to the FAFSA
+      Processing System (FPS). Help is available for
+      students online or by calling the Federal
+      Student Aid Information Center (FSAIC) at 1-800-4-FED-
+      AID (1-800-433-3243). There are many advantages to
+      filing electronically, including: - Faster processing; -
+      Availability of online help; - Skip logic, which allows
+      applicants to skip over questions that don9t
+      pertain to them; and - Fewer errors and rejected
+      applications because internal and end-of-entry data
+      edits ensure that required fields are completed and
+      conflicts are resolved prior to submission.
     questions_and_answers:
-      - question: |
-          What kind of protection is available to employees that report misconduct?
-        answer: |
-          PNC strictly prohibits retaliation against employees who report ethical concerns in good faith.
-          The company will investigate all concerns promptly and fairly and take action as appropriate.
-      - question: |
-          How is retaliation handled under PNC Core Values?
-        answer: |
-          Retaliation is treated as a serious violation of PNC's core values, and appropriate action will
-          be taken against those responsible, including potential termination.
-      - question: |
-          How quickly does PNC investigate allegations of retaliation?
-        answer: |
-          PNC investigates allegations of retaliation promptly.
-  - context: |
-      ## 1. Shareholder Meetings
-      ## 1.1 Annual Meetings
-      An annual meeting of the shareholders for the election of directors of the Corporation and the
-      transaction of such other business as may properly come before the meeting shall be held at 11 a.m.
-      on the fourth Wednesday in April of each year, or on such other date or hour as may be fixed
-      by the Board of Directors of the Corporation (' Board ').
-      ## 1.2 Special Meetings
-      Special meetings of the shareholders may be called at any time
-      by the Chair of the Board (' Chair ') or the Chief Executive Officer (' CEO ') or by the Board pursuant
-      to a resolution adopted by a majority of the total number of directors that the Corporation would
-      have if there were no vacancies.
-      Only business brought before a special meeting of the shareholders pursuant to the Corporation's
-      notice of the meeting shall be conducted at the meeting.
-
+      - question: When does the overhauled FAFSA form with the FAFSA
+          Simplification Act and FUTURE Act implementation begin?
+        answer: The overhauled FAFSA form begins with the 2024-25 award year.
+      - question: What are the benefits of filing the FAFSA electronically?
+        answer: Electronic filing offers faster processing, online help
+          availability, skip logic to bypass irrelevant questions, and reduced
+          errors due to built-in data edits.
+      - question: How can students get assistance with the FAFSA form?
+        answer: Students can receive help online or by contacting the Federal
+          Student Aid Information Center (FSAIC) at 1-800-4-FED-AID
+          (1-800-433-3243).
+  - context: |-
+      Paper (PDF) FAFSA Form The paper (PDF) FAFSA form
+      is available on StudentAid.gov. In future
+      cycles, students will also be able to call
+      the Federal Student Aid Information Center (FSAIC) at
+      1-800-433-3243 to request a single copy. The form
+      can be printed and completed by hand, or
+      by typing the data on the PDF before
+      printing and mailing it. The mailing address is
+      printed on the first page of the FAFSA form
+      under <Mail Your FAFSA® Form=. The address
+      changes annually, so use the address printed on
+      the associated year9s FAFSA form. You must mail all
+      fillable pages of the form (pages 7-20),
+      including pages that are left blank because they
+      do not apply to the applicant. Extra postage will
+      be required due to the size and/or weight
+      of the mailing. FSA no longer prints or mails
+      aid-related publications, though they are available
+      on StudentAid.gov for users to download and print.
     questions_and_answers:
-      - question: |
-          When is the annual shareholder meeting held?
-        answer: |
-          The annual meeting of shareholders is held every year at 11 a.m. on the fourth Wednesday of April, unless otherwise indicated by the Board.
-      - question: |
-          Who can call a special meeting of shareholders?
-        answer: |
-          Special meetings may be called by the Chair of the Board, the Chief Executive Officer, or
-          by the Board through a majority vote that matches the number of directors that
-          the Corporation would have without any vacancies.
-      - question: |
-          What types of business can be conducted at a special meeting of shareholders?
-        answer: |
-          Special meetings may only be held for business matters brought before a special
-          meeting of shareholders prior to the meeting announcement.
-
-  - context: |
-      ## 1. Board of Directors
-      The Board shall oversee the business and affairs of the Corporation,
-      which shall consist of not less than five (5) nor more than twenty-five (25)
-      members as shall be established from time to time exclusively by
-      resolution adopted by a majority of the Board.
-      The Board, by the affirmative vote of a majority of directors, shall elect from among its members
-      a director designated as the Chair and may elect one (1) or more vice chairs
-      (each a ' Vice Chair ' and collectively, the ' Vice Chairs ').
-      The Chair shall have the powers and duties as shall be assigned from time to time by the Board and the Vice Chair(s),
-      if any, shall have the powers and duties as shall be assigned from time to time by the Board.
-      ## 2. Term of Office.
-      After being elected by the shareholders, or by the directors pursuant to
-      Article III,  Section  3,  directors  shall  hold  office  until
-      the  next  annual  meeting  and  until  their successors  shall
-      have been elected and qualified or  until  such  director's  earlier  death,
-      resignation, disqualification or removal.
-      3. Vacancy.
-      Subject to applicable law and the rights of the holders of any series of the Corporation's
-      preferred stock with respect to such series of
-      preferred stock, all vacancies in the Board, including vacancies resulting from an increase
-      in the number of directors, may be filled by
-      a majority vote of the remaining directors, even if less than a quorum.
+      - question: Where can students obtain the paper (PDF) FAFSA form?
+        answer: Students can download the paper (PDF) FAFSA form from
+          StudentAid.gov. In future cycles, they will also be able to request a
+          single copy by calling the Federal Student Aid Information Center
+          (FSAIC) at 1-800-433-3243.
+      - question: How can the FAFSA form be completed and submitted?
+        answer: The FAFSA form can be printed, completed by hand or typed on the
+          PDF before printing, and then mailed to the address printed on the
+          first page under 'Mail Your FAFSA® Form'. All fillable pages (7-20),
+          including blank ones, must be mailed.
+      - question: Does the FSA still provide printed aid-related publications?
+        answer: No, the FSA no longer prints or mails aid-related publications.
+          These are available for users to download and print on StudentAid.gov.
+  - context: |-
+      Incarcerated Applicants Incarcerated applicants who
+      have access to the necessary technology can
+      complete a FAFSA form online using their
+      StudentAid.gov account username and password.
+      However, many incarcerated applicants will not
+      be able to file electronically due to
+      limitations on access to computers and the
+      internet. These applicants can complete a
+      paper (PDF) FAFSA form designated specifically for
+      incarcerated applicants, available on the Prison
+      Education Programs resource page of the FSA
+      Knowledge Center. The mailing address for the
+      Incarcerated Applicant FAFSA form is printed on
+      the first page of the form under <Mail
+      Your FAFSA® Form=. The address changes annually and
+      differs from the general FAFSA form mailing address,
+      so use the address printed on the associated
+      year9s Incarcerated Applicant FAFSA form. You must
+      mail all fillable pages of the form (pages 7-20),
+      including pages that are left blank because they
+      do not apply to the applicant. Extra
+      postage will be required due to the size and/or
+      weight of the mailing.
     questions_and_answers:
-      - question: |
-          How are vacancies on the Board of Directors filled?
-        answer: |
-          Board vacancies, including those resulting from an increase in directors, may be filled by a majority vote of the remaining directors.
-      - question: |
-          What is the required number of Board members?
-        answer: |
-          The number of Board members must be between 5 and 25.
-      - question: |
-          What is the permitted term of office for directors?
-        answer: |
-          Directors hold office until the next annual meeting and
-          after their successors have been elected and qualified. They can also be replaced after their
-          death, resignation, disqualification, or removal.
-
-  - context: |
-      ## 10. Notice;  Waiver of Notice.
-      10.1 Notice
-      Any notice required to be given to any director may be given either personally (including by telephone) or by sending a copy
-      thereof in writing through first class United States mail, overnight courier (with receipt therefor), by facsimile,
-      email or other electronic communication to the director's  address or telephone, email address, facsimile number, as
-      the case may be, appearing in the records of the Corporation, or supplied by such director to the Corporation for the purpose of notice.
-      If notice is sent by mail or overnight courier, it shall be deemed to have been given to the person entitled thereto when deposited
-      in the United States mail or with an overnight courier service.  If the notice is given by facsimile, email or other electronic means,
-      it shall be deemed given when sent to facsimile number or  email address,  appearing  in  the  records  of  the  Corporation  or  supplied
-      by  such  director  to  the Corporation for purpose of notice.  Reference in these Bylaws to 'written' or 'in writing' includes electronic transmission.
-      10.2 Waiver
-      Unless otherwise provided by law, whenever any notice is required to be given to any director under the provisions of these Bylaws,
-      a waiver thereof in writing which is filed with the Corporate Secretary in record form signed by the person or persons entitled to such notice,
-      whether before or after the time stated therein, will be deemed equivalent to the giving of such notice.
-      Except in the case of a special meeting of directors, neither the business to be transacted nor the purpose of the meeting need be
-      specified in the waiver of notice of such meeting.  Attendance of a person either in person or by proxy, when permitted, will constitute a
-      waiver  of  notice  of  such  meeting,  except  where  such  person  attends  a  meeting  for  the express purpose of objecting to the
-      transaction of any business because the meeting was not lawfully called or convened.
+      - question: Can incarcerated applicants file their FAFSA form
+          electronically?
+        answer: Incarcerated applicants with access to technology can complete a
+          FAFSA form online using their StudentAid.gov account, but many cannot
+          due to limited access to computers and the internet.
+      - question: Where can incarcerated applicants obtain a paper FAFSA form?
+        answer: Incarcerated applicants can find a specific paper (PDF) FAFSA
+          form on the Prison Education Programs resource page of the FSA
+          Knowledge Center.
+      - question: How should incarcerated applicants mail their completed FAFSA
+          form?
+        answer: Incarcerated applicants must mail all fillable pages (7-20) of
+          the form, including blank pages, to the address printed on the first
+          page under 'Mail Your FAFSA® Form.' The address changes annually and
+          differs from the general FAFSA form mailing address.
+  - context: |-
+      Account Username and Password (FSA ID) Each
+      person who provides data in the online FAFSA
+      form must have an account username and password
+      to access the form. In the past, a Social
+      Security number (SSN) was required to create
+      a StudentAid.gov account. Starting with the
+      2024325 award year, all individuals4even those
+      without an SSN4can create a StudentAid.gov account.
+      Persons with an SSN will still have their information
+      verified by the Social Security Administration
+      (SSA), while those without an SSN will use the
+      TransUnion® knowledge-based identity verification
+      process described below. The account username and
+      password are created in real-time so that
+      the student or other contributor can use it
+      immediately to enter the FAFSA form. Pending
+      StudentAid.gov accounts with an SSN will be
+      sent to the SSA to be matched. Only those
+      accounts with a successful match (<SSA
+      Match Status= value of 4 on the Institutional
+      Student
     questions_and_answers:
-      - question: |
-          How should notices be given to directors?
-        answer: |
-          Notices to directors can be given personally, by mail, overnight courier, facsimile, email, or other electronic communication.
-      - question: |
-          What is the process for waiving notice?
-        answer: |
-          A waiver of notice in writing, signed by the person entitled to notice, will be deemed equivalent to the giving of notice.
-          For special meetings, attendance in person or by proxy constitutes a waiver of notice.
-      - question: |
-          What causes a notice to be deemed as given?
-        answer: |
-          Notices are deemed as given when deposited in the mail or with an overnight courier service,
-          or when sent by facsimile, email, or other electronic means.
-  - context: |
-      The board of directors oversees the business and affairs of PNC
-      as managed by the officers and employees of PNC. In discharging their duties,
-      directors act in good faith and in a manner they reasonably believe to be in
-      the best interests of PNC, and they consider the best interests of various PNC
-      constituencies. In discharging their duties, directors rely on the honesty and
-      integrity of their fellow directors and PNC's officers and employees, as well as PNC's
-      outside advisors, auditors, and other representatives. Directors are expected to exercise
-      independent judgment, ask relevant and challenging questions, and actively engage in discussions
-      regarding company strategy, risk management, and corporate governance. Furthermore, directors are
-      required to stay informed about key business and financial matters, regulatory changes, and
-      industry trends that could impact PNC's operations. They must also ensure that the company adheres
-      to high ethical standards and complies with all applicable laws and regulations. The Board conducts
-      regular evaluations to assess its effectiveness and identify opportunities for improvement in
-      governance practices. Additionally, directors participate in ongoing education programs to enhance
-      their understanding of PNC's evolving business landscape and regulatory environment. Directors are
-      also encouraged to maintain an open dialogue with shareholders and stakeholders to address concerns
-      and provide transparency regarding governance decisions. The Board further ensures that there are proper
-      mechanisms in place for monitoring executive compensation, succession planning, and crisis management.
-      Regular risk assessments are conducted to evaluate potential threats to PNC's business model, ensuring that
-      the company remains resilient in the face of economic, legal, or operational challenges. Board members are
-      also expected to uphold corporate social responsibility principles, integrating environmental, social,
-      and governance (ESG) considerations into their decision-making. The Board also ensures that internal audits
-      and compliance programs are robust, and it periodically reviews company policies to align with evolving
-      regulatory standards.
+      - question: What is required to create a StudentAid.gov account for the
+          2024-2025 award year?
+        answer: For the 2024-2025 award year, anyone can create a StudentAid.gov
+          account, even without a Social Security Number (SSN). Those with an
+          SSN will still undergo verification by the Social Security
+          Administration (SSA), while those without an SSN will use TransUnion's
+          knowledge-based identity verification process.
+      - question: How are the account username and password generated for the
+          FAFSA form?
+        answer: The account username and password are created in real-time,
+          allowing immediate access to the FAFSA form upon creation.
+      - question: What happens to pending StudentAid.gov accounts with an SSN
+          for the 2024-2025 award year?
+        answer: Pending StudentAid.gov accounts with an SSN for the 2024-2025
+          award year will be sent to the Social Security Administration (SSA)
+          for matching.
+  - context: |-
+      Account Username and Password (FSA ID)
+      Information Record) will be considered verified.
+      A pending username and password that has
+      not been verified will still allow the user
+      to access and submit the online FAFSA form and
+      complete other limited actions on StudentAid.gov.
+      However, the Department will not be able
+      to retrieve federal tax data from the
+      Internal Revenue Service (IRS). For this reason, we
+      recommend that users do not sign and submit
+      the online FAFSA form until the account username
+      and password is verified through a match with
+      the SSA. If the SSN match is unsuccessful,
+      the account is not considered verified, and
+      an email is sent to notify the individual
+      that they should review the information they
+      provided (name, date of birth, and SSN) to
+      ensure it is accurate. If the applicant used
+      an unverified account username and password
+      to sign their FAFSA form, the applicant is
+      also sent a paper FAFSA Submission Summary
+      requesting all required signatures.
     questions_and_answers:
-      - question: |
-          What is the primary role of PNC's Board of Directors?
-        answer: |
-          The Board of Directors oversees PNC's business and affairs, ensuring that
-          management operates in the best interests of the company and its stakeholders.
-          They monitor company strategy, risk management, and corporate governance while
-          ensuring regulatory compliance and ethical conduct.
-      - question: |
-          What key qualities are expected from directors when performing their duties?
-        answer: |
-          Directors must act in good faith, rely on the honesty and integrity of
-          fellow board members and management, and exercise independent judgment
-          while engaging in strategic discussions and risk assessments. They should also stay
-          informed about regulatory and industry changes and participate in ongoing education programs.
-      - question: |
-          How do directors stay informed and ensure compliance with regulations?
-        answer: |
-          Directors are required to stay updated on financial,
-          regulatory, and industry changes, monitor company strategy and risks,
-          and ensure adherence to high ethical standards and all applicable laws.
-          Additionally, they oversee executive compensation, succession planning, ESG initiatives,
-          and crisis management, ensuring resilience in the face of potential threats.
-  - context: |
-      The Nominating and Governance Committee identifies potential directors
-      in a number of ways. The committee may consider recommendations made by
-      current or former directors or members of executive management. The committee
-      may also identify potential directors through contacts in the business, civic, academic,
-      legal, and non-profit communities. When appropriate, the committee may retain a search firm
-      to identify candidates. The committee meets to consider relevant information regarding a director
-      candidate in light of the board-approved evaluation criteria and needs of the board.
-      If the committee does not recommend a candidate for nomination or appointment, or for more
-      evaluation, no further action is taken, and in the case of a shareholder-recommended candidate,
-      the committee's secretary informs the shareholder of the decision and the date of the meeting.
-      If the committee decides to recommend a candidate to the board as a nominee for election at an
-      annual meeting of shareholders or for appointment by the board, the committee chair reports that
-      decision to the full board. The full board votes on whether to nominate the candidate for
-      election or appoint the candidate to the board, as applicable. The committee also evaluates
-      candidates based on their ability to contribute to the board's diversity in terms of professional
-      background, experience, and perspective. Additionally, the committee considers the candidate's
-      independence under regulatory standards, ensuring they meet all eligibility criteria for board service.
-      The evaluation process includes a review of potential conflicts of interest, prior leadership roles, and an
-      assessment of how well the candidate aligns with PNC's corporate values and governance expectations.
-      The committee also examines whether the candidate possesses expertise in financial services, risk management,
-      regulatory compliance, or other areas critical to PNC's strategic direction.
+      - question: What actions can a user perform with a pending username and
+          password verification on StudentAid.gov?
+        answer: A user with a pending username and password can access and
+          submit the online FAFSA form, but cannot have their federal tax data
+          retrieved from the IRS.
+      - question: What happens if the SSN match for account verification with
+          SSA is unsuccessful?
+        answer: If the SSN match fails, the account is not verified, and the
+          individual receives an email to review their provided information
+          (name, date of birth, and SSN) for accuracy.
+      - question: What additional steps are required if an applicant signs their
+          FAFSA form using an unverified account username and password?
+        answer: The applicant will receive a paper FAFSA Submission Summary and
+          is requested to provide all required signatures.
+  - context: |-
+      TransUnion ® Knowledge-Based Identity Verification Users
+      who create a StudentAid.gov account without an SSN
+      will be required to complete a
+      knowledge-based identity verification process with TransUnion®
+      to verify their identity and provide login
+      credentials. The student (if a citizen of one of
+      the Freely Associated States - the Republic
+      of the Marshall Islands, the Republic
+      of Palau, or the Federated States of
+      Micronesia), student9s spouse, parent, or parent
+      spouse/partner are sent through the TransUnion®
+      process when they do not have an SSN and check
+      the <I don9t have an SSN= box during the
+      account creation process. They will be asked
+      to provide additional information to confirm their
+      identity.
     questions_and_answers:
-      - question: |
-          How does the Nominating and Governance Committee identify potential directors?
-        answer: |
-          The committee identifies candidates through recommendations from
-          current or former directors, executive management, and business, civic, academic, legal, or non-profit communities.
-          They may also use a search firm if necessary.
-      - question: |
-          What happens if the committee does not recommend a candidate for nomination?
-        answer: |
-          No further action is taken, and in the case of shareholder-recommended candidates,
-          the committee's secretary informs the shareholder of the decision and the meeting date.
-      - question: |
-          How is a director candidate officially nominated for election?
-        answer: |
-          If approved, the committee chair reports the recommendation to the full board,
-          which then votes on whether to nominate the candidate for election or appoint them to the board.
-          The committee also ensures candidates bring diverse expertise, have no conflicts of interest,
-          and align with PNC's governance principles.
-  - context: |
-      The board has not adopted a policy with respect to separating the
-      Chair and Chief Executive Officer ("CEO") positions. The board believes
-      that the board leadership structure should be flexible enough to accommodate
-      different circumstances. The board considers its leadership each year and discusses
-      whether to separate the Chair and CEO positions as necessary or appropriate, in its
-      judgment, including but not limited to when selecting a new CEO. The Presiding Director
-      is an independent director who also serves as the chair of the Nominating and Governance
-      Committee. The board has approved the following duties for the Presiding Director:
-      (1) Preside at meetings of the board in the event of the Chair's unavailability;
-      (2) Preside at regularly scheduled executive sessions of the board's independent directors;
-      (3) When the Presiding Director considers it appropriate, convene and preside at meetings
-      or executive sessions of the board's independent directors; (4) Confer with the Chair or the
-      CEO immediately following the meetings or executive sessions of the board's independent or
-      non-management directors to convey the substance of the discussions held during those sessions,
-      subject to any limitations specified by the independent directors; (5) Act as the principal
-      liaison between the Chair and the CEO and the board's independent and non-management directors.
-      The Presiding Director is also responsible for ensuring that the board's executive sessions are
-      conducted effectively, allowing independent directors to discuss key issues candidly.
-      They play a vital role in facilitating open communication between directors and company
-      leadership, ensuring that management is responsive to board concerns. Furthermore,
-      the Presiding Director may consult with major shareholders as needed, providing insights
-      into corporate governance matters and board decisions. The board reviews the responsibilities
-      of the Presiding Director periodically, ensuring they align with PNC's evolving governance
-      structure and industry best practices.
-    questions_and_answers:
-      - question: |
-          Does PNC require the separation of the Chair and CEO roles?
-        answer: |
-          No, PNC does not have a fixed policy
-          requiring separation of the Chair and CEO roles. The Board evaluates this structure annually
-          to determine the best approach for the company.
-      - question: |
-          What is the role of the Presiding Director within the Board?
-        answer: |
-          The Presiding Director is an independent director who also serves as
-          the chair of the Nominating and Governance Committee.
-          They oversee executive sessions, board meetings in the Chair’s absence, and
-          communication between independent directors and management.
-      - question: |
-          How does the Presiding Director ensure communication between the Board and Management?
-        answer: |
-          After executive sessions, the Presiding Director confers with the Chair or CEO
-          to convey the substance of discussions,
-          serving as the principal liaison between independent directors and management. They
-          also facilitate discussions with major shareholders on governance matters.
-
-document_outline: |
-  An overview of PNC employee policies related to business conduct and ethics,
-  corporate governance, bylaws, and Payment Card Industry (PCI) security standards.
-
+      - question: What type of identity verification is required for users
+          creating a StudentAid.gov account without an SSN?
+        answer: Users without an SSN are required to complete a knowledge-based
+          identity verification process with TransUnion®.
+      - question: Who is subject to the TransUnion® identity verification
+          process on StudentAid.gov?
+        answer: Students from the Freely Associated States (Marshall Islands,
+          Palau, and Micronesia), their spouses, parents, or parent
+          spouses/partners are subject to this process if they don't have an SSN
+          and indicate so during account creation.
+      - question: What additional information is requested from users during the
+          TransUnion® identity verification process on StudentAid.gov?
+        answer: Users are asked to provide additional information to confirm
+          their identity as part of the TransUnion® process.
+document_outline: ''
 document:
-  repo: https://github.com/agapebondservant/pnc-instruct-lab.git
-  commit: e134fa2692cdd20f03963961f60a18080f9ee481
+  repo: ''
+  commit: ''
   patterns:
-    - patterns/code_of_business_conduct_and_ethics.md
-    - patterns/corp_bylaws.md
-    - patterns/pci_ssc_quickref_guide.md
-    - patterns/corporate_governance_guidelines.md
+    - ''

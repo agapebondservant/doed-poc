@@ -11,10 +11,11 @@ docling==2.37.0
 langgraph==0.4.8
 easygui==0.98.3
 pypandoc_binary==1.15
-pysqlite3-binary==0.5.4
+#pysqlite3-binary==0.5.4
 langchain_nomic==0.1.4
 chromadb==1.0.15
 langchain-chroma==0.2.4
+ruamel_yaml==0.2.12
 #lark==1.2.2
 #lark-parser==0.12.0
 #langgraph-checkpoint 

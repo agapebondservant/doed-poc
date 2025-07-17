@@ -1,5 +1,3 @@
-## Application	and	Verification	Guide
-
 ## Introduction
 
 This	guide	is	intended	for	college	financial	aid	administrators	and	counselors	who	help	students	with	the	financial	aid process4completing	the	Free	Application	for	Federal	Student	Aid	(FAFSA ® )	form,	verifying	information,	and	making corrections	and	other	changes	to	the	information	reported	on	the	FAFSA	form.

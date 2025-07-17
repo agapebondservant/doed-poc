@@ -29,15 +29,11 @@ cd -
 	```
 	oc create secret generic data-prep-wb --from-env-file .env
 	oc get secret data-prep-wb -oyaml > openshift/wb-secret.yaml
-	```
+	
+### Serving LLMs on Openshift AI
+1. Install Minio: (see <a href="https://ai-on-openshift.io/tools-and-applications/minio/minio/#log-on-to-your-project-in-openshift-console" target="_blank">link</a>)
 
-## Deploy App
-
-```
-source .env
-oc new-build --binary --strategy=docker --name $APP_NAME
-oc start-build $APP_NAME --from-dir . --follow
-oc new-app -i $APP_NAME:latest -e VLLM_TARGET_DEVICE=$VLLM_TARGET_DEVICE -e CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES -e GRANITE_API_KEY=$GRANITE_API_KEY -e GRANITE_API_BASE=$GRANITE_API_BASE -e TAVILY_API_KEY=$TAVILY_API_KEY
-oc expose deploy $APP_NAME
-oc expose service $APP_NAME
+```zh
+oc new-project minio --display-name="Minio S3 for LLMs"
+oc apply -f k8s/minio/minio-all.yaml
 ```
