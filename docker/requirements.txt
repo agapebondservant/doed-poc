@@ -15,6 +15,7 @@ pysqlite3-binary==0.5.4
 langchain_nomic==0.1.4
 chromadb==1.0.15
 langchain-chroma==0.2.4
+ruamel_yaml==0.18.14
 #langgraph-checkpoint 
 #langgraph-checkpoint-sqlite
 #vllm==0.9.1
