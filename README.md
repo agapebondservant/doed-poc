@@ -20,6 +20,13 @@ podman push quay.io/oawofolurh/agentic-wb:latest
 cd -
 ```
 
+OR
+
+```
+oc new-build --name=data-prep-wb --to="quay.io/oawofolurh/agentic-wb:latest" --strategy=docker --binary
+oc start-build data-prep-wb --from-dir docker --follow
+```
+
 ## Deploy Workbench
 * Use the image built above to import a new notebook image
 	* Attach a GPU accelerator profile if one exists

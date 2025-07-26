@@ -15,6 +15,7 @@ import qna_cleanup_processor
 import json
 from ruamel.yaml import YAML
 from ruamel.yaml.scalarstring import LiteralScalarString
+from ruamel.yaml.tokens import CommentToken
 from io import StringIO
 from pathlib import Path
 import traceback
@@ -72,12 +73,15 @@ class QnaGeneratorProcessor:
         
         for i, count in enumerate(context_counts):
             new_chunks = self.splitter.process(input_files[i])
-            chunks += new_chunks[:count]
+            chunks += [{"chunk": chunk, 
+                        "category": "text"} 
+                       for chunk in new_chunks[:count]]
 
         # Add at least 1 table context if one exists
         if len(table_files):
             print(f"Adding table context from {table_files[0]}...")
-            chunks[-1] = self.ocr.extract_tables(table_files[0])[0] 
+            chunks[-1] = {"chunk": self.ocr.extract_tables(table_files[0])[0], 
+                          "category": "table"}
 
         print(f"Semantic chunking completed.")
         
@@ -110,15 +114,16 @@ class QnaGeneratorProcessor:
         
         for i, chunk in enumerate(chunks):
             try:
-                literal_chunk = LiteralScalarString(f"""{'\n'.join(textwrap.wrap(chunk.rstrip(),70))}""")
-                section = {"context": literal_chunk,
-                           "questions_and_answers": json.loads(self.generate_question_answer_pairs(chunk))}
+                chunk_context = LiteralScalarString(f"""{self.refiner.process_chunk_context(chunk["chunk"], chunk["category"])}""")
+                    
+                section = {"context": chunk_context,
+                           "questions_and_answers": json.loads(self.generate_question_answer_pairs(chunk_context))}
                 
                 payload["seed_examples"].append(section)
             except Exception as e:
                 print(f"Error while processing chunk {i}...")
                 traceback.print_exc()
-                print("Skipped chunk.")
+                print(f"Skipped chunk {i}.")
 
         print(f"Generated YAML payload from template.")
         
@@ -138,6 +143,7 @@ class QnaGeneratorProcessor:
             yaml.explicit_start = True
 
             yaml.dump(payload, f, transform=self.refiner.process_chunk )
+            f.write("\n") # End with newline 
             
             print(f"qna.yaml file generated at {output_dir}/qna.yaml.")
 
@@ -150,32 +156,52 @@ class QnaGeneratorProcessor:
             output_dir (str): Target directory for qna.yaml file
             table_dir (str): Directory containing converted markdown files with tables
         """
-        input_files = glob.glob(f"{input_dir}/*.md")
+        input_subdirs = glob.glob(f"{input_dir}/**/", recursive=True)
 
-        if not input_files:
+        input_subdirs = [subdir for subdir in input_subdirs if glob.glob(f"{subdir}/*.md")]
+
+        if not input_subdirs:
             print(f"No Markdown files found in <{input_dir}>.")
             return
         
-        os.makedirs(output_dir, exist_ok=True)
+        table_subdirs = [f"{table_dir}{subdir.partition(input_dir)[2]}" for subdir in input_subdirs]
+        
+        output_subdirs = [f"{output_dir}{subdir.partition(input_dir)[2]}" for subdir in input_subdirs]
+
+        for input_subdir, output_subdir, table_subdir in zip(input_subdirs, output_subdirs, table_subdirs):
             
-        with open(f"{output_dir}/qna.yaml", "w") as f:
-            print(f"Generating file: {f.name}...")
+            print(f"\n==========================\nProcessing markup files in {output_subdir}...\n==========================\n")
             
-            chunks = self.select_chunks(input_dir, table_dir)
+            os.makedirs(output_subdir, exist_ok=True)
+            
+            os.makedirs(table_subdir, exist_ok=True)
+                
+            with open(f"{output_subdir}/qna.yaml", "w") as f:
+                
+                print(f"Generating file: {f.name}...")
+                
+                chunks = self.select_chunks(input_subdir, table_subdir)
+    
+                payload = self.generate_yaml_payload(chunks)
+    
+                print(f"YAML: \n{json.dumps(payload, indent=2)}")
+    
+                self.generate_yaml_file(payload, output_subdir)
+            
+                print(f"\n==========================\nCompleted processing for {output_subdir}.\n==========================\n\n")
 
-            payload = self.generate_yaml_payload(chunks)
-
-            print(f"YAML: \n{json.dumps(payload, indent=2)}")
-
-            self.generate_yaml_file(payload, output_dir)
-
-if __name__ == "__main__":   
+if __name__ == "__main__": 
+    
     processor = QnaGeneratorProcessor(model_id=os.getenv("MODEL_ID"))
+    
     try:
-        processor.process(f"{Path(__file__).resolve().parents[1]}/scraped/studentaid/handbook/application and verification", 
-                          f"{Path(__file__).resolve().parents[1]}/taxonomy/knowledge/studentaid/handbook/application and verification", 
-                          table_dir=f"{os.path.expanduser('~')}/{os.getenv('APP_NAME')}/tables")
+        
+        processor.process(f"{Path(__file__).resolve().parents[1]}/scraped", 
+                          f"{Path(__file__).resolve().parents[1]}/taxonomy/knowledge", 
+                          table_dir=f"{Path(__file__).resolve().parents[1]}/tables")
+
     except Exception as e:
+        
         print("An exception occurred:")
         traceback.print_exc()
         print(f"Exception message: {e}")

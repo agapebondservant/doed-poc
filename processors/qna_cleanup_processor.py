@@ -37,6 +37,15 @@ class QnaCleanupProcessor:
         lines = chunk.splitlines()
         lines = [self.cleanup_line(line) for line in lines]
         return "\n".join(lines)
+
+    def process_chunk_context(self, chunk, chunk_category) -> str:
+        """
+        Performs cleanup at the chunk level, but only for the chunk context section of the chunk.
+        """
+        lines = chunk.rstrip().splitlines()
+        if chunk_category=="text":
+            lines = ['\n'.join(textwrap.wrap(line,75)) for line in lines]
+        return '\n'.join(lines)
     
     def cleanup_line(self, line) -> str:
         """

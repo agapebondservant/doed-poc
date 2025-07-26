@@ -72,10 +72,10 @@ if __name__ == "__main__":
     f"{Path.cwd()}/scraped/studentaid/handbook/volume 8",
     f"{Path.cwd()}/scraped/studentaid/state scholarships"]
     review_dirs = \
-    [f"{Path.cwd()}/tables",
-    f"{Path.cwd()}/tables",
-    f"{Path.cwd()}/tables",
-    f"{Path.cwd()}/tables",
-    f"{Path.cwd()}/tables"]
+    [f"{Path.cwd()}/tables/studentaid/handbook/application and verification",
+    f"{Path.cwd()}/tables/studentaid/handbook/volume 3",
+    f"{Path.cwd()}/tables/studentaid/handbook/volume 7",
+    f"{Path.cwd()}/tables/studentaid/handbook/volume 8",
+    f"{Path.cwd()}/tables/studentaid/state scholarships"]
     for input_dir, output_dir, review_dir in zip(input_dirs, output_dirs, review_dirs):
         processor.process(input_dir, output_dir, review_dir)

@@ -1,0 +1,145 @@
+---
+version: 3
+domain: ''
+created_by: ''
+seed_examples:
+  - context: |-
+      Preventive Measures Legacy Scholarship
+      Amount $2,000
+      Deadline
+      February 27, 2026
+      Since 2019, we've awarded over $100,000 in scholarships to more than 70 deserving individuals through our PM Legacy Scholarship and PM Employee Scholarship Programs. Through our Legacy Scholarship, we will award $2000 to up to 45 students this year. Eligibility Resident of or attending college in Pennsylvania, Georgia or Washington D.C. Metro area Entering or enrolled in an
+      Research shows that the average Georgia student has more than $40,000 in student loans, making it the third most indebted state in the country. If you're a Georgia student attending college soon or are already enrolled, you should be looking for ways to make college more affordable.
+      One way to reduce your debt is to apply for more scholarships, especially Georgia-specific scholarships. Scholarships can reduce how much you have to pay for tuition, room and board, textbooks and other college costs.
+      Keep reading to learn more about Georgia scholarships, including where to find them, how to apply and how many different kinds there are.
+    questions_and_answers:
+      - question: What is the amount of the Preventive Measures Legacy
+          Scholarship and who is eligible?
+        answer: The scholarship amount is $2,000, and it is open to residents of
+          or students attending college in Pennsylvania, Georgia, or Washington
+          D.C. Metro area, who are either entering or currently enrolled in a
+          college or university.
+      - question: By what date should applicants submit their applications for
+          the Preventive Measures Legacy Scholarship?
+        answer: The deadline for the Preventive Measures Legacy Scholarship
+          applications is February 27, 2026.
+      - question: Why is it important for Georgia students to apply for
+          scholarships, according to the information provided?
+        answer: Georgia students carry an average of more than $40,000 in
+          student loans, making it the third most indebted state. Applying for
+          scholarships, especially Georgia-specific ones, can help reduce this
+          debt by covering tuition, room and board, textbooks, and other college
+          costs.
+  - context: |-
+      What is a Georgia scholarship?
+      A Georgia scholarship is an award given to a student who is either from Georgia or is attending college in Georgia. Like all types of scholarships, Georgia scholarships do not have to be paid back after you graduate or leave school.
+      Georgia scholarships may be either merit- or need-based, depending on the particular scholarship and its funding organization. Some scholarships may not look at the student's finances at all, while others will consider both grades and financial need.
+      For example, the Greenhouse Scholars Whole Person Scholarship requires that students have a 3.5 GPA or higher and also that their family earns less than $80,000 per year. Students must also be from Georgia, California, Colorado, Illinois, New York or North
+      Carolina. Only high school seniors are eligible to apply, and they must attend a four-year school. The scholarship is worth $5,000 per year for four years total.
+      Some Georgia scholarships will cover the entire cost of tuition. However, most will only cover a portion of costs. If you apply to several different scholarships, you may be able to significantly reduce your out-of-pocket costs.
+    questions_and_answers:
+      - question: Who is eligible to receive a Georgia scholarship?
+        answer: A Georgia scholarship can be awarded to a student who is either
+          from Georgia or is attending college in Georgia.
+      - question: What factors determine eligibility for Georgia scholarships?
+        answer: Georgia scholarships can be merit- or need-based; some may only
+          consider grades, while others evaluate both grades and financial need.
+      - question: Can Georgia scholarships cover the full cost of tuition?
+        answer: While some Georgia scholarships cover the entire tuition cost,
+          most only cover a portion, and applying to multiple scholarships can
+          help reduce out-of-pocket expenses.
+  - context: |-
+      Where to find Georgia scholarships
+      There are many different places where you can find Georgia scholarships. Many Georgia scholarships come directly from the school you plan to attend, especially if you're attending school in-state. Most state schools have a special list of scholarships for local students to encourage them to stay.
+      Like with other scholarships, you can also search Google for 'Georgia scholarships.' If you go this route, try narrowing your search beyond just general state scholarships. For example, if you're from Decatur, Georgia, look for 'Decatur Georgia scholarships.' This will result in a smaller list of scholarships that you might be better qualified for, potentially maximizing your chances of winning an award.
+      You can find Georgia scholarships through major sites, like Scholarships.com, which has a robust awards directory. If you sign up for an account, you will be notified when a new scholarship is posted that you're a good candidate for.
+      Scholarships can come from either nonprofit or for-profit companies. Local organizations often provide local scholarships to area students. For example, the GLA Hubbard Scholarship is sponsored by the Georgia Library Association. This one-time $3,000 award is given to a student who is a resident of Georgia studying Library Sciences.
+    questions_and_answers:
+      - question: Where can I find Georgia scholarships specifically for
+          in-state students?
+        answer: You can find Georgia scholarships for in-state students directly
+          from the school you plan to attend, as many state schools have a
+          special list of scholarships for local students.
+      - question: How can I narrow down my search for Georgia scholarships on
+          Google?
+        answer: To narrow your search, try specifying your location, like
+          'Decatur Georgia scholarships,' to get a smaller list of scholarships
+          you might be better qualified for.
+      - question: Are there any examples of local organizations providing
+          Georgia scholarships?
+        answer: Yes, local organizations like the Georgia Library Association
+          sponsor scholarships; for example, the GLA Hubbard Scholarship awards
+          a one-time $3,000 to a Georgia resident studying Library Sciences.
+  - context: |-
+      How to apply for Georgia scholarships
+      One of the first steps is to fill out the Free Application for Federal Student Aid (FAFSA). Most students think that the FAFSA is only necessary if they want to apply for federal student loans, but many scholarship applications also require the FAFSA. If you fill out the FAFSA, you are not required to take out federal student loans.
+      Another bonus? If you submit the FAFSA, you'll also be in the running for federal grants like the Pell Grant. There's no reason not to submit the FAFSA, unless you're not eligible to do so.
+      Students should also complete the Georgia State Financial Application (GSFAPP). The GSFAPP gives you access to a variety of different scholarships, including the HOPE and Zell Miller awards. These are significant state-based scholarships that can help students who are attending school within the state.
+      Scholarships from third-party organizations and companies often have their own application, but may also require the FAFSA or the GSFAPP. When applying for a scholarship or grant, make sure you understand which documents are required.
+    questions_and_answers:
+      - question: What is the initial step to apply for Georgia scholarships?
+        answer: The first step is to fill out the Free Application for Federal
+          Student Aid (FAFSA).
+      - question: Are federal grants like the Pell Grant accessible through
+          FAFSA submission?
+        answer: Yes, submitting the FAFSA also puts students in consideration
+          for federal grants such as the Pell Grant.
+      - question: Which scholarships can students access by completing the
+          Georgia State Financial Application (GSFAPP)?
+        answer: Completing the GSFAPP grants students access to various
+          scholarships, including the HOPE and Zell Miller awards, which are
+          significant state-based scholarships for in-state students.
+  - context: |-
+      Are there Georgia scholarships for certain minority groups?
+      While many Georgia scholarships are available to students from all types of backgrounds, others are more selective. If you're part of any kind of minority group, you may be able to find special Georgia scholarships just for you.
+      For example, the Black Alumni Scholarship at the University of Georgia is given to an African-American student who is attending UGA. There is a 3.0 minimum GPA requirement to both receive and maintain the scholarship. The scholarship is worth $2,000 per year and can be renewed for three years.
+      UGA also sponsors the Diversity Scholarship, which is worth $2,500. Students must be part of an underrepresented group and must also meet two of the following:
+      - Have a history of overcoming unique challenges
+      - Be a first-generation college student
+      - Come from a low-income family
+      - Live in a rural or inner-city location
+      - Have been raised by a single parent
+    questions_and_answers:
+      - question: Are there Georgia scholarships specifically for minority
+          groups?
+        answer: Yes, there are Georgia scholarships like the Black Alumni
+          Scholarship at the University of Georgia and the Diversity
+          Scholarship, which are reserved for students from underrepresented
+          groups.
+      - question: What are the eligibility criteria for the Black Alumni
+          Scholarship at UGA?
+        answer: To be eligible for the Black Alumni Scholarship at UGA, a
+          student must be an African-American attending UGA with a minimum GPA
+          of 3.0, which can be renewed for three years with the award amounting
+          to $2,000 per year.
+      - question: What additional criteria must students meet to qualify for the
+          Diversity Scholarship at UGA?
+        answer: 'For the Diversity Scholarship at UGA, students must belong to an
+          underrepresented group and demonstrate at least two of the following: being
+          a first-generation college student, coming from a low-income family, living
+          in a rural or inner-city location, or having been raised by a single parent.
+          The scholarship is worth $2,500.'
+  - context: |-
+      | | | District Attorney and Indigent Legal Service Attorney Loan Forgiveness Program |
+      |---:|:----------------|:-------------------------------------------------------------------------------------------------------------|
+      | 0 | | ww.hesc.com/content.nsf/SFC/District_Attorney_and_Indigent_Legal_Services_Attorney_Loan_Forgiveness_Program) |
+      | 1 | e to qualifying | law students who serve as district attorneys, assistant district attorneys or indigent legal service |
+    questions_and_answers:
+      - question: Who is eligible for the District Attorney and Indigent Legal
+          Service Attorney Loan Forgiveness Program?
+        answer: Law students who serve as district attorneys, assistant district
+          attorneys, or indigent legal service attorneys are eligible.
+      - question: What type of individuals does this loan forgiveness program
+          focus on serving?
+        answer: The program focuses on supporting district attorneys, assistant
+          district attorneys, and indigent legal service attorneys.
+      - question: Is there a web address provided for more information on this
+          program?
+        answer: Yes, additional information can be found at
+          <https://www.hesc.com/content.nsf/SFC/District_Attorney_and_Indigent_Legal_Services_Attorney_Loan_Forgiveness_Program>.
+document_outline: ''
+document:
+  repo: ''
+  commit: ''
+  patterns:
+    - ''
