@@ -1,7 +1,7 @@
 ---
 version: 3
-domain: ''
-created_by: ''
+domain: 'state scholarships'
+created_by: 'oawofolu'
 seed_examples:
   - context: |-
       Preventive Measures Legacy Scholarship
@@ -19,7 +19,8 @@ seed_examples:
       you're a Georgia student attending college soon or are already enrolled,
       you should be looking for ways to make college more affordable.
       One way to reduce your debt is to apply for more scholarships, especially
-      Georgia-specific scholarships. Scholarships can reduce how much you have to
+      Georgia-specific scholarships. Scholarships can reduce how much
+      you have to
       pay for tuition, room and board, textbooks and other college costs.
       Keep reading to learn more about Georgia scholarships, including where to
       find them, how to apply and how many different kinds there are.
@@ -44,14 +45,16 @@ seed_examples:
   - context: |-
       What is a Georgia scholarship?
       A Georgia scholarship is an award given to a student who is either from
-      Georgia or is attending college in Georgia. Like all types of scholarships,
+      Georgia or is attending college in Georgia. Like all types
+      of scholarships,
       Georgia scholarships do not have to be paid back after you graduate or
       leave school.
       Georgia scholarships may be either merit- or need-based, depending on the
       particular scholarship and its funding organization. Some scholarships may
       not look at the student's finances at all, while others will consider both
       grades and financial need.
-      For example, the Greenhouse Scholars Whole Person Scholarship requires that
+      For example, the Greenhouse Scholars
+      Whole Person Scholarship requires that
       students have a 3.5 GPA or higher and also that their family earns less
       than $80,000 per year. Students must also be from Georgia, California,
       Colorado, Illinois, New York or North
@@ -81,13 +84,15 @@ seed_examples:
   - context: |-
       Where to find Georgia scholarships
       There are many different places where you can find Georgia scholarships.
-      Many Georgia scholarships come directly from the school you plan to attend,
+      Many Georgia scholarships come directly from
+      the school you plan to attend,
       especially if you're attending school in-state. Most state schools have a
       special list of scholarships for local students to encourage them to stay.
       Like with other scholarships, you can also search Google for 'Georgia
       scholarships.' If you go this route, try narrowing your search beyond just
       general state scholarships. For example, if you're from Decatur, Georgia,
-      look for 'Decatur Georgia scholarships.' This will result in a smaller list
+      look for 'Decatur Georgia scholarships.'
+      This will result in a smaller list
       of scholarships that you might be better qualified for, potentially
       maximizing your chances of winning an award.
       You can find Georgia scholarships through major sites, like
@@ -118,7 +123,8 @@ seed_examples:
           studying Library Sciences.
   - context: |-
       Are there Georgia scholarships for certain minority groups?
-      While many Georgia scholarships are available to students from all types of
+      While many Georgia scholarships are
+      available to students from all types of
       backgrounds, others are more selective. If you're part of any kind of
       minority group, you may be able to find special Georgia scholarships just
       for you.
@@ -142,10 +148,14 @@ seed_examples:
           renewable for up to three years with a value of $2,000 per year.
       - question: What are the eligibility criteria for the Diversity
           Scholarship at the University of Georgia?
-        answer: 'The Diversity Scholarship at UGA is for students from underrepresented
-          groups who meet at least two of the following criteria: overcoming unique
-          challenges, being a first-generation college student, coming from a low-income
-          family, living in a rural or inner-city location, or being raised by a single
+        answer: 'The Diversity Scholarship at UGA
+          is for students from underrepresented
+          groups who meet at least two of the
+          following criteria: overcoming unique
+          challenges, being a first-generation
+          college student, coming from a low-income
+          family, living in a rural or inner-city
+          location, or being raised by a single
           parent.'
       - question: Can international students or non-minority students apply for
           these Georgia scholarships mentioned?
@@ -155,10 +165,15 @@ seed_examples:
           the Black Alumni Scholarship for African-American students and the
           Diversity Scholarship for underrepresented groups.
   - context: |-
-      | | | District Attorney and Indigent Legal Service Attorney Loan Forgiveness Program |
+      | | | District Attorney and Indigent Legal Service Attorney
+      Loan Forgiveness Program |
       |---:|:----------------|:-------------------------------------------------------------------------------------------------------------|
-      | 0 | | ww.hesc.com/content.nsf/SFC/District_Attorney_and_Indigent_Legal_Services_Attorney_Loan_Forgiveness_Program) |
-      | 1 | e to qualifying | law students who serve as district attorneys, assistant district attorneys or indigent legal service |
+      | 0 | | ww.hesc.com/content.nsf/SFC/
+      District_Attorney_and_Indigent_Legal_Services_Attorney_Loan_Forgiveness_Program)
+      |
+      | 1 | e to qualifying | law students
+      who serve as district attorneys,
+      assistant district attorneys or indigent legal service |
     questions_and_answers:
       - question: Who is eligible for the District Attorney and Indigent Legal
           Service Attorney Loan Forgiveness Program?
@@ -172,9 +187,10 @@ seed_examples:
           program?
         answer: Yes, additional information can be found at
           <https://www.hesc.com/content.nsf/SFC/District_Attorney_and_Indigent_Legal_Services_Attorney_Loan_Forgiveness_Program>.
-document_outline: ''
+document_outline: Per-state information about available scholarship and
+  state financial aid programs
 document:
-  repo: ''
-  commit: ''
+  repo: https://github.com/agapebondservant/doed-poc
+  commit: d0b12df7568a5422725d526ff88e0c177c5c1981
   patterns:
-    - ''
+    - 'scraped/studentaid/state scholarships/*.md'

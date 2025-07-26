@@ -1,7 +1,7 @@
 ---
 version: 3
-domain: ''
-created_by: ''
+domain: 'volume 3'
+created_by: 'oawofolu'
 seed_examples:
   - context: |-
       Introduction
@@ -25,8 +25,8 @@ seed_examples:
       student financial aid programs authorized under
       Title IV of the HEA.
     questions_and_answers:
-      - question: What does the Federal Student Aid (FSA) Handbook primarily
-          discuss regarding Title IV student financial aid programs?
+      - question: What does the FSA Handbook primarily discuss regarding Title
+          IV student financial aid programs?
         answer: The FSA Handbook primarily discusses the academic calendar,
           payment period, disbursement requirements, determining a student's
           cost of attendance, and packaging Title IV aid.
@@ -34,10 +34,10 @@ seed_examples:
           Handbook?
         answer: In this volume, 'we' and 'us' refer to the United States
           Department of Education.
-      - question: What does 'you' refer to in the context of this FSA Handbook
-          volume?
-        answer: In this volume, 'you' refers to the primary audience, which are
-          school financial aid administrators.
+      - question: What term is consistently used for educational institutions in
+          this specific volume of the Handbook?
+        answer: In this volume, the term 'school' is consistently used to refer
+          to educational institutions.
   - context: |-
       Chapter 2
       - We have revised the discussion of <Allowable
@@ -65,23 +65,23 @@ seed_examples:
       costs that may be included in this COA
       component.
     questions_and_answers:
-      - question: How does the revised discussion clarify allowable costs for
-          Pell Grant recipients with an enrollment intensity below 50%?
+      - question: How does the revised discussion clarify the allowable costs
+          for Pell Grant recipients with an enrollment intensity below 50%?
         answer: The revised discussion clarifies that for Pell Grant recipients
           with an enrollment intensity below 50%, the cost of attendance (COA)
-          remains based on the full-year costs for a full-time student.
-      - question: What additional cost has been included under Tuition and Fees
-          in the revised text?
+          is still based on the full-year costs for a full-time student.
+      - question: What additional cost has been added to the Tuition and Fees
+          component in the revised text?
         answer: Health insurance premiums charged to all students have been
-          added as an additional example of a cost that may be included in the
-          Tuition and Fees COA component.
-      - question: What has been revised in the guidance for Costs of Obtaining a
-          License, Certification, or First Professional Credential section?
+          added as an additional cost that may be included in the Tuition and
+          Fees component.
+      - question: What has been revised in the Costs of Obtaining a License,
+          Certification, or First Professional Credential section?
         answer: The revised text clarifies that the guidance pertains to
           credentials required for a student to practice or participate in the
-          occupation the program prepares them for, and bar exam fees have been
-          added as an example of costs that may be included in this COA
-          component.
+          occupation the program is preparing the student to enter. Bar exam
+          fees have been added as an example of costs that may be included in
+          this COA component.
   - context: |-
       Weeks of Instructional Time in an Academic
       Year
@@ -110,56 +110,15 @@ seed_examples:
           hours?
         answer: The academic year must include at least 30 weeks of
           instructional time.
-      - question: For a program offered in clock hours, how many weeks of
-          instructional time are mandated in an academic year?
+      - question: How many weeks of instructional time are mandated for a
+          program offered in clock hours?
         answer: The academic year must include at least 26 weeks of
           instructional time.
-      - question: When does the period for counting instructional weeks in an
-          academic year begin and end?
-        answer: This period generally begins on the first day of classes and
-          ends on the last day of classes or the last day of examinations,
-          whichever is later.
-  - context: |-
-      Weeks of Instructional Time in an Academic
-      Year
-      Schools that provide 2- or 4-year associate or
-      baccalaureate degree programs may apply to the
-      Department if they want to request approval to
-      establish a full academic year of less
-      than 30 weeks of instructional time. The Department
-      is permitted to grant a reduction for good
-      cause to no less than 26 weeks of
-      instructional time. These requests are handled on a
-      case-by-case basis. To request approval, contact the
-      School Participation Division that oversees your
-      school. A listing of contact information for the
-      regional School Participation Divisions can be
-      found in the Knowledge Center.
-      For all Title IV programs, a week of
-      instructional time is any period of seven consecutive
-      days in which 3
-      - At least one day of regularly scheduled
-      instruction or examinations occurs, or, after the
-      last scheduled day of classes
-      for a term or payment period, at least one
-      scheduled day of study for examinations occurs;
-    questions_and_answers:
-      - question: What is the minimum instructional time required for schools to
-          apply for a reduced academic year?
-        answer: Schools must provide at least 26 weeks of instructional time to
-          request approval for a reduced academic year, which is less than 30
-          weeks.
-      - question: Who handles requests for a reduced academic year, and where
-          can contact information be found?
-        answer: Requests are handled by the School Participation Division
-          overseeing the school, and their contact information can be found in
-          the Knowledge Center.
-      - question: How is a week of instructional time defined for Title IV
-          programs?
-        answer: A week of instructional time consists of any seven consecutive
-          days with at least one day of regular instruction or examinations, or
-          one scheduled day for examinations after the last class day of a term
-          or payment period.
+      - question: Does the paragraph discuss academic year requirements for
+          direct assessment programs? If so, where can one find this
+          information?
+        answer: Yes, the paragraph mentions direct assessment programs, and the
+          relevant information can be found in Volume 2, Chapter 2.
   - context: |-
       or
       Instructional time excludes scheduled breaks and
@@ -185,18 +144,19 @@ seed_examples:
       - question: What does instructional time exclude according to the
           paragraph?
         answer: Instructional time excludes scheduled breaks and activities not
-          considered 'academic engagement', as well as orientation or counseling
-          periods.
-      - question: Can the weeks of instructional time match the calendar weeks
-          between the first and last day of classes or exams? Why?
-        answer: No, instructional time weeks may be less than calendar weeks due
-          to exclusions like breaks, non-academic activities, and
-          orientation/counseling periods.
-      - question: Is there a regulatory standard set for the number of
-          instructional time hours per day? If not, who determines it?
-        answer: No regulatory standard exists for instructional time hours per
-          day; it's left to the reasonable interpretation of schools and their
-          accrediting agencies.
+          considered 'academic engagement', as well as periods of orientation or
+          counseling.
+      - question: Can the number of weeks of instructional time match the
+          calendar weeks between the first and last day of classes?
+        answer: No, the weeks of instructional time may be less than the
+          calendar weeks elapsing between the first day of classes and the last
+          day of classes or examinations.
+      - question: Is there a regulatory standard set for the number of hours of
+          instructional time per day?
+        answer: No, there is no regulatory standard set for the number of hours
+          of instructional time that constitute one day of instruction; it is
+          left to the reasonable interpretation of schools and their accrediting
+          agencies.
   - context: |-
       Weeks of instructional time:
       - Cannot overlap, and a school cannot use a
@@ -220,68 +180,20 @@ seed_examples:
       examples that appear throughout this chapter mean
       weeks of instructional time as defined above.
     questions_and_answers:
-      - question: Can a school use the same day for the end of one week of
-          instructional time and the beginning of the next week?
+      - question: Can a school use a single day for more than one week of
+          instructional time?
         answer: No, a school cannot use a single day of scheduled instruction,
           exams, or study time to create more than one week of instructional
-          time, meaning no overlapping or back-to-back weeks on the same day.
+          time.
       - question: On which day can a week of instructional time begin and end,
           according to the regulations?
-        answer: A week of instructional time may begin and end on any day other
+        answer: A week of instructional time may begin and end on a day other
           than Monday, as long as it comprises seven consecutive days including
           at least one day of scheduled instruction, exams, or study time.
-      - question: How early in a payment period can a week of instructional time
-          commence?
+      - question: How many days before the first day of scheduled instruction or
+          exams can a week of instructional time begin?
         answer: A week of instructional time may begin up to six days before the
           first day of scheduled instruction or exams in a payment period.
-  - context: |-
-      Academic Year Definition and Effect on Awards
-      The Title IV academic year that a school
-      defines for a program must meet the regulatory
-      minimums for both clock or credit hours and weeks of
-      instructional time, as described above. In some
-      instances, the defined academic year for a program
-      may not coincide with the academic calendar
-      of the school. For example, a school might
-      define the academic year for a program as containing
-      24 semester hours and 30 weeks of
-      instructional time but have an academic calendar
-      consisting of four 8-week nonstandard terms (i.e., 32
-      weeks of instructional time). This would affect the
-      calculation of Pell Grant awards, as explained in
-      Volume 7.
-      As discussed later in this chapter and in
-      Volume 8, Chapter 6, the timing of disbursements
-      and, for the Direct Loan Program, annual loan limit
-      progression will be affected if a program is
-      an academic year in length in credit or
-      clock hours but not in weeks of instructional
-      time, or for a program longer than an academic
-      year in length, if a student9s completion of the
-      credit or clock hours in the program9s academic
-      year does not coincide with completion of the
-      weeks of instructional time in the academic
-      year.
-    questions_and_answers:
-      - question: What are the regulatory minimums for clock or credit hours and
-          weeks of instructional time in a Title IV academic year?
-        answer: The regulatory minimums for a Title IV academic year include a
-          minimum number of clock or credit hours (not specified) and a minimum
-          of 30 weeks of instructional time, as described above.
-      - question: How can a school's defined academic year for a program differ
-          from its academic calendar?
-        answer: A school's defined academic year for a program may not align
-          with its academic calendar, for instance, having an academic year
-          consisting of nonstandard terms that result in more or fewer weeks of
-          instructional time than the defined minimum.
-      - question: What impact can discrepancies between credit/clock hours and
-          weeks of instructional time have on financial aid programs like Pell
-          Grants and Direct Loans?
-        answer: Discrepancies between credit/clock hours and weeks of
-          instructional time can affect the calculation of Pell Grant awards and
-          the timing of disbursements for the Direct Loan Program, especially if
-          a program's length in credit or clock hours does not correspond with
-          the weeks of instructional time in the academic year.
   - context: |-
       Academic Calendars and Terms
       Schools offer programs with many kinds of academic
@@ -309,42 +221,66 @@ seed_examples:
       - question: What are the different types of academic calendars for Title
           IV programs?
         answer: The different types of academic calendars for Title IV programs
-          are standard term, nonstandard term, non-term (including clock-hour
-          calendars), and subscription-based.
+          are standard term, nonstandard term, non-term (which includes
+          clock-hour calendars), and subscription-based.
       - question: How is academic progress measured in a standard term or
-          nonstandard term calendar?
-        answer: In a standard term or nonstandard term calendar, academic
-          progress is measured in credit hours.
-      - question: Can you explain the nature of classes in a non-term academic
-          calendar?
-        answer: In a non-term academic calendar, classes do not adhere to a set
-          time frame, and academic progress can be measured in either credit or
-          clock hours.
+          nonstandard term academic calendar?
+        answer: In a standard term or nonstandard term academic calendar,
+          academic progress is measured in credit hours, with terms having set
+          time frames for class scheduling.
+      - question: What distinguishes a non-term academic calendar from standard
+          or nonstandard terms?
+        answer: In a non-term academic calendar, classes do not follow a set
+          time frame like terms, and academic progress can be measured in either
+          credit or clock hours.
   - context: |-
-      | | | District Attorney and Indigent Legal Service
-      Attorney Loan Forgiveness Program |
-      |---:|:----------------|:--------------------------------------------------
-      -----------------------------------------------------------|
-      | 0 | | ww.hesc.com/content.nsf/SFC/District_Attorney_and_
-      Indigent_Legal_Services_Attorney_Loan_Forgiveness_Program) |
-      | 1 | e to qualifying | law students who serve as district attorneys,
-      assistant district attorneys or indigent legal service |
+      Academic Calendars and Terms
+      - minimum and maximum term length restrictions for
+      standard terms (see the discussion in the
+      next section of this chapter);
+      - requirements for determining full-time enrollment
+      (see Volume 1, Chapter 1);
+      - use of a Scheduled Academic Year (SAY),
+      BBAY 1, BBAY 2, or BBAY 3 for monitoring
+      Direct Loan annual loan limit progression (see Volume 8,
+      Chapter 6); and
+      - use of Pell Grant formulas 1, 2, or 3
+      to calculate Pell Grant awards (see Volume 7,
+      Chapter 4).
+      Whether an academic calendar is standard
+      term, nonstandard term, non-term, or subscription-based
+      has implications for how aid is awarded and disbursed
+      under the Title IV programs.
+      Subscription-Based Program
     questions_and_answers:
-      - question: Who is eligible for the District Attorney and Indigent Legal
-          Service Attorney Loan Forgiveness Program?
-        answer: Law students who serve as district attorneys, assistant district
-          attorneys, or indigent legal service attorneys are eligible.
-      - question: What type of individuals does this loan forgiveness program
-          focus on serving?
-        answer: The program focuses on supporting district attorneys, assistant
-          district attorneys, and indigent legal service attorneys.
-      - question: Is there a web address provided for more information on this
-          program?
-        answer: Yes, additional information can be found at
-          <https://www.hesc.com/content.nsf/SFC/District_Attorney_and_Indigent_Legal_Services_Attorney_Loan_Forgiveness_Program>.
-document_outline: ''
+      - question: What are the term length restrictions for standard academic
+          terms?
+        answer: The paragraph mentions minimum and maximum term length
+          restrictions for standard terms, but does not provide specific
+          lengths; these are discussed in the next section of the chapter.
+      - question: How does full-time enrollment status get determined?
+        answer: Full-time enrollment requirements are outlined in Volume 1,
+          Chapter 1 of the referenced materials.
+      - question: Which Scheduled Academic Year (SAY) types are used for
+          monitoring Direct Loan annual loan limit progression?
+        answer: BBAY 1, BBAY 2, or BBAY 3 are used for monitoring Direct Loan
+          annual loan limit progression, as per Volume 8, Chapter 6.
+      - question: What Pell Grant formulas are used to calculate Pell Grant
+          awards?
+        answer: Pell Grant awards are calculated using formulas 1, 2, or 3, as
+          described in Volume 7, Chapter 4.
+      - question: How does the type of academic calendar (standard, nonstandard,
+          non-term, or subscription-based) affect Title IV aid awarding and
+          disbursement?
+        answer: The academic calendar type (standard term, nonstandard term,
+          non-term, or subscription-based) has implications for how Title IV aid
+          is awarded and disbursed, though specifics are not provided in the
+          paragraph.
+document_outline: Guidance on academic calendars, payment periods,
+  disbursement requirements for awarding aid under Title IV, and
+  cost of attendance
 document:
-  repo: ''
-  commit: ''
+  repo: https://github.com/agapebondservant/doed-poc
+  commit: d0b12df7568a5422725d526ff88e0c177c5c1981
   patterns:
-    - ''
+    - 'scraped/studentaid/handbook/volume 3/*.md'

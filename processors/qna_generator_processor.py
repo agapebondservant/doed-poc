@@ -12,6 +12,8 @@ import traceback
 import splitter_processor
 import ocr_processor
 import qna_cleanup_processor
+import data_collection_processor
+from data_collection_processor import DataCollectionProcessor
 import json
 from ruamel.yaml import YAML
 from ruamel.yaml.scalarstring import LiteralScalarString
@@ -25,6 +27,9 @@ load_dotenv()
 import importlib
 importlib.reload(splitter_processor)
 importlib.reload(ocr_processor)
+importlib.reload(qna_cleanup_processor)
+importlib.reload(data_collection_processor)
+
 
 class QnaGeneratorProcessor:
     def __init__(self, model_id: str):
@@ -193,13 +198,19 @@ class QnaGeneratorProcessor:
 if __name__ == "__main__": 
     
     processor = QnaGeneratorProcessor(model_id=os.getenv("MODEL_ID"))
+
+    data_collector = DataCollectionProcessor()
     
     try:
-        
-        processor.process(f"{Path(__file__).resolve().parents[1]}/scraped", 
-                          f"{Path(__file__).resolve().parents[1]}/taxonomy/knowledge", 
-                          table_dir=f"{Path(__file__).resolve().parents[1]}/tables")
 
+        input_dirs, output_dirs, table_dirs = data_collector.process(
+            f"{Path(__file__).resolve().parents[1]}/scraped", 
+            f"{Path(__file__).resolve().parents[1]}/taxonomy/knowledge",
+            f"{Path(__file__).resolve().parents[1]}/tables")
+
+        for input_dir, output_dir, table_dir in zip(input_dirs, output_dirs, table_dirs):
+            processor.process(input_dir, output_dir, table_dir)
+        
     except Exception as e:
         
         print("An exception occurred:")

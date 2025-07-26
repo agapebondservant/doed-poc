@@ -1,61 +1,114 @@
 ---
 version: 3
-domain: ''
-created_by: ''
+domain: 'volume 8'
+created_by: 'oawofolu'
 seed_examples:
   - context: |-
-      We	have	made	the	following	changes	in	Volume	8	for	2025-2026:
-      - In	Chapter	3,	we	have	revised	the	discussion	of	loan	periods	to	provide	a	limited	exception	to	the	longstanding requirement	that	the	loan	period	for	a	Direct	Loan	may	not	include	any	terms	in	which	the	borrower	is	ineligible	to receive	Direct	Loan	funds.
-      - Also	in	Chapter	3,	we	have	added	a	slightly	revised	and	expanded	version	of	guidance	on	the	treatment	of	Direct Loan	disbursements	made	after	the	date	of	a	borrower9s	death	that	was	previously	in	Volume	4,	Chapter	2	of	the	FSA Handbook	under	the	heading	<Checking	Eligibility	at	the	Time	of	Disbursement.=	Because	this	guidance	is	specific	to Direct	Loans,	we	believe	Volume	8	is	a	more	appropriate	location.
-      - In	Chapter	5,	we	have	revised	Example	6	to	reflect	the	limited	exception	to	the	requirement	that	a	loan	period	may not	include	terms	in	which	the	borrower	is	ineligible	(see	Chapter	3	changes	above).
-      - In	Chapter	7,	we	have	revised	the	discussion	of	transfer	students	and	abbreviated	loan	periods	to	clarify	that	in	some circumstances	a	transfer	student	may	be	eligible	to	receive	more	Direct	Loan	funds	for	the	program	at	the	new school	than	a	non-transfer	student	would	be	eligible	to	receive	for	that	same	program.
+      We have made the following changes in Volume 8
+      for 2025-2026:
+      - In Chapter 3, we have revised the discussion of
+      loan periods to provide a limited exception to the
+      longstanding requirement that the loan period for a
+      Direct Loan may not include any terms in which the
+      borrower is ineligible to receive Direct Loan
+      funds.
+      - Also in Chapter 3, we have added a slightly
+      revised and expanded version of guidance on the
+      treatment of Direct Loan disbursements made after the
+      date of a borrower9s death that was previously
+      in Volume 4, Chapter 2 of the FSA Handbook
+      under the heading <Checking Eligibility at the
+      Time of Disbursement.= Because this guidance is
+      specific to Direct Loans, we believe Volume 8 is
+      a more appropriate location.
+      - In Chapter 5, we have revised Example 6 to
+      reflect the limited exception to the requirement
+      that a loan period may not include terms in which the
+      borrower is ineligible (see Chapter 3 changes
+      above).
+      - In Chapter 7, we have revised the discussion of
+      transfer students and abbreviated loan periods to
+      clarify that in some circumstances a transfer
+      student may be eligible to receive more Direct
+      Loan funds for the program at the new school
+      than a non-transfer student would be eligible to
+      receive for that same program.
     questions_and_answers:
       - question: What changes have been made to Chapter 3 in Volume 8 for
           2025-2026 regarding Direct Loans?
-        answer: "Two changes were made to Chapter 3: first, a limited exception was
-          introduced to the rule that a Direct Loan's loan period cannot include ineligible
-          terms for the borrower; second, revised and expanded guidance on treating
-          Direct Loan disbursements after a borrower's death was added, previously
-          found in Volume 4, Chapter 2 of the FSA Handbook."
-      - question: How has Example 6 in Chapter 5 of Volume 8 been revised?
+        answer: In Chapter 3, a limited exception has been introduced to the
+          rule that a Direct Loan's loan period cannot include ineligible terms
+          for the borrower, and guidance on treating Direct Loan disbursements
+          after a borrower's death has been added and moved from Volume 4,
+          Chapter 2 of the FSA Handbook.
+      - question: How has Chapter 5, Example 6 been revised in Volume 8 for
+          2025-2026?
         answer: Example 6 in Chapter 5 has been revised to reflect the limited
-          exception to the requirement that a loan period may not include terms
-          in which the borrower is ineligible, as discussed in the changes to
-          Chapter 3.
-      - question: What modification has been done to the discussion of transfer
-          students and abbreviated loan periods in Chapter 7 of Volume 8?
-        answer: The discussion in Chapter 7 was revised to clarify that, under
-          certain circumstances, a transfer student may be eligible for more
-          Direct Loan funds for a program at a new school than a non-transfer
-          student would be for the same program.
+          exception allowing a loan period to include ineligible terms for the
+          borrower, as discussed in the changes to Chapter 3.
+      - question: What modifications have been implemented in Chapter 7 of
+          Volume 8 for 2025-2026 concerning transfer students and abbreviated
+          loan periods?
+        answer: Chapter 7 has been revised to clarify that transfer students
+          may, in certain situations, be eligible for more Direct Loan funds for
+          a program at their new school than a non-transfer student would be
+          eligible for the same program.
   - context: |-
-      Direct	Subsidized	Loans	and	Direct	Unsubsidized	Loans
-      Only	students	who	have	financial	need	may	receive	Direct	Subsidized	Loans.	The	federal	government	does	not	charge interest	on	Direct	Subsidized	Loans	while	the	borrower	is	enrolled	on	at	least	a	half-time	basis,	during	the	grace	and deferment	periods,	and	during	certain	other	periods	(for	example,	during	certain	periods	of	repayment	under	certain repayment	plans	that	determine	the	required	monthly	payment	amount	based	on	the	borrower9s	income	and	family	size).
-      If	a	student	has	received	a	determination	of	need	for	a	Direct	Subsidized	Loan	in	an	amount	of	$200	or	less,	a	school	may choose	not	to	originate	a	Direct	Subsidized	Loan	and	may	instead	include	that	amount	as	part	of	a	Direct	Unsubsidized Loan.
-      Financial	need	is	not	an	eligibility	requirement	to	receive	a	Direct	Unsubsidized	Loan.	The	federal	government	generally charges	interest	on	Direct	Unsubsidized	Loans	during	all	periods,	with	limited	exceptions	(for	example,	during	periods	of deferment	for	cancer	treatment).
+      Direct Subsidized Loans and Direct Unsubsidized Loans
+      Only students who have financial need may
+      receive Direct Subsidized Loans. The federal government
+      does not charge interest on Direct Subsidized Loans
+      while the borrower is enrolled on at
+      least a half-time basis, during the grace and
+      deferment periods, and during certain other periods (for
+      example, during certain periods of repayment under
+      certain repayment plans that determine the required
+      monthly payment amount based on the borrower9s income and
+      family size).
+      If a student has received a determination of
+      need for a Direct Subsidized Loan in an
+      amount of $200 or less, a school may choose not
+      to originate a Direct Subsidized Loan and may
+      instead include that amount as part of a Direct
+      Unsubsidized Loan.
+      Financial need is not an eligibility requirement
+      to receive a Direct Unsubsidized Loan. The federal
+      government generally charges interest on Direct
+      Unsubsidized Loans during all periods, with limited
+      exceptions (for example, during periods of deferment for
+      cancer treatment).
     questions_and_answers:
       - question: Who is eligible to receive Direct Subsidized Loans?
-        answer: Only students who have demonstrated financial need are eligible
-          to receive Direct Subsidized Loans.
+        answer: Only students who have financial need may receive Direct
+          Subsidized Loans.
       - question: What are the interest conditions for Direct Subsidized Loans?
         answer: The federal government does not charge interest on Direct
           Subsidized Loans while the borrower is enrolled at least half-time,
-          during grace and deferment periods, and certain other periods based on
-          income and family size.
-      - question: Can a student with a Direct Subsidized Loan amount of $200 or
-          less receive a Direct Unsubsidized Loan instead?
-        answer: Yes, if a student's Direct Subsidized Loan amount is $200 or
-          less, the school may choose not to originate the Direct Subsidized
-          Loan and instead include that amount as part of a Direct Unsubsidized
-          Loan.
+          during grace and deferment periods, and certain other periods.
+      - question: Can a student with a Direct Subsidized Loan determination of
+          $200 or less still receive a loan?
+        answer: If a student has a Direct Subsidized Loan determination of $200
+          or less, the school may choose not to originate the loan and instead
+          include that amount as part of a Direct Unsubsidized Loan.
   - context: |-
-      Direct	Subsidized	Loans	and	Direct	Unsubsidized	Loans
-      To	be	eligible	to	receive	a	Direct	Subsidized	Loan	or	Direct	Unsubsidized	Loan,	an	undergraduate	student	attending	a school	that	participates	in	the	Federal	Pell	Grant	Program	must	first	have	received	a	determination	of	their	Pell	Grant eligibility	for	the	period	of	enrollment	for	which	the	student	is	requesting	a	loan.
-      No	Minimum	Age	To	Receive	a	Direct	Loan
-      Students	who	are	minors	may	receive	Direct	Loans,	but	they	may	not	refuse	to	repay	the	loans	based	on	a	<defense	of infancy=	(that	is,	by	claiming	that	they	were	too	young	to	enter	into	the	contract	of	signing	the	promissory	note).
-      No	Defense	of	Infancy
-      Higher	Education	Act	(HEA)	Sec.	484A(b)(2)
-      Requirement	To	Offer	Both	Subsidized	and	Unsubsidized	Loans
+      Direct Subsidized Loans and Direct Unsubsidized Loans
+      To be eligible to receive a Direct Subsidized
+      Loan or Direct Unsubsidized Loan, an undergraduate
+      student attending a school that participates in the
+      Federal Pell Grant Program must first have received a
+      determination of their Pell Grant eligibility for the
+      period of enrollment for which the student is
+      requesting a loan.
+      No Minimum Age To Receive a Direct Loan
+      Students who are minors may receive Direct Loans, but
+      they may not refuse to repay the loans based on
+      a <defense of infancy= (that is, by claiming
+      that they were too young to enter into the
+      contract of signing the promissory note).
+      No Defense of Infancy
+      Higher Education Act (HEA) Sec. 484A(b)(2)
+      Requirement To Offer Both Subsidized and
+      Unsubsidized Loans
     questions_and_answers:
       - question: What are the eligibility criteria for Direct Subsidized and
           Direct Unsubsidized Loans?
@@ -63,42 +116,86 @@ seed_examples:
           the Federal Pell Grant Program must first receive a determination of
           their Pell Grant eligibility for the period of enrollment for which
           the student is requesting a loan.
-      - question: Can minors receive Direct Loans?
-        answer: Yes, students who are minors may receive Direct Loans, but they
-          cannot refuse to repay the loans based on a defense of infancy.
+      - question: Can minors refuse to repay Direct Loans using the defense of
+          infancy?
+        answer: No, students who are minors may not refuse to repay Direct Loans
+          based on a defense of infancy, even though they can receive these
+          loans.
       - question: Is there a requirement for schools to offer both Direct
           Subsidized and Direct Unsubsidized Loans?
-        answer: Yes, according to the Higher Education Act (HEA) Sec.
+        answer: Yes, according to the Higher Education Act (HEA) Section
           484A(b)(2), schools are required to offer both Direct Subsidized and
           Direct Unsubsidized Loans.
   - context: |-
-      Direct	Subsidized	Loans	and	Direct	Unsubsidized	Loans
-      If	you	verify	that	the	parents	of	a	dependent	undergraduate	student	have	refused	to	complete	the	parental	information sections	of	the	Free	Application	for	Federal	Student	Aid	(FAFSA)	form	or	that	they	have	ended	financial	support	for	the student,	you	may	make	a	professional	judgment	decision	to	offer	the	student	a	Direct	Unsubsidized	Loan	in	an	amount	up to	the	applicable	annual	loan	limit	for	a	dependent	undergraduate.	For	instance,	under	these	circumstances	a	dependent second-year	undergraduate	could	receive	up	to	$6,500	in	Direct	Unsubsidized	Loan	funds	(see	Chapter	4	of	this	volume for	information	on	annual	loan	limits).	However,	the	student	may	not	receive	Direct	Subsidized	Loans	or	aid	from	any	of the	other	Title	IV	programs.
-      Self-certification	from	the	dependent	student	is	not	sufficient	to	verify	that	the	parents	have	ended	financial	support	or have	refused	to	complete	the	FAFSA	form.	In	most	cases,	this	requirement	can	be	met	by	obtaining	a	signed	and	dated statement	from	one	of	the	student9s	parents.	For	more	information,	see	the	discussion	under	<Dependent	students without	parent	support=	in	the	<Professional	Judgment=	section	of	Chapter	5	of	the	Application	and	Verification	Guide.
+      Direct Subsidized Loans and Direct Unsubsidized Loans
+      If you verify that the parents of a dependent
+      undergraduate student have refused to complete the
+      parental information sections of the Free Application
+      for Federal Student Aid (FAFSA) form or that they
+      have ended financial support for the student, you may
+      make a professional judgment decision to
+      offer the student a Direct Unsubsidized Loan in an
+      amount up to the applicable annual loan limit for a
+      dependent undergraduate. For instance, under these
+      circumstances a dependent second-year undergraduate could
+      receive up to $6,500 in Direct Unsubsidized Loan
+      funds (see Chapter 4 of this volume for information
+      on annual loan limits). However, the student may
+      not receive Direct Subsidized Loans or aid from any
+      of the other Title IV programs.
+      Self-certification from the dependent student is not
+      sufficient to verify that the parents have ended
+      financial support or have refused to complete the
+      FAFSA form. In most cases, this requirement can be
+      met by obtaining a signed and dated statement
+      from one of the student9s parents. For
+      more information, see the discussion under
+      <Dependent students without parent support= in the
+      <Professional Judgment= section of Chapter 5 of
+      the Application and Verification Guide.
     questions_and_answers:
       - question: Under what conditions can a dependent undergraduate student
           receive a Direct Unsubsidized Loan?
         answer: A dependent undergraduate student can receive a Direct
-          Unsubsidized Loan if their parents refuse to complete the parental
-          information sections of the FAFSA or end financial support for the
-          student.
+          Unsubsidized Loan if their parents have refused to complete the
+          parental information sections of the FAFSA form or ended financial
+          support for the student.
       - question: What is the maximum Direct Unsubsidized Loan amount a
-          dependent second-year undergraduate can receive?
+          dependent second-year undergraduate can receive without parental
+          support?
         answer: A dependent second-year undergraduate can receive up to $6,500
-          in Direct Unsubsidized Loan funds annually.
-      - question: How can a professional judgment decision be made regarding
-          parental financial support for a dependent student?
-        answer: A professional judgment decision can be made by obtaining a
-          signed and dated statement from one of the student's parents, as
-          self-certification from the dependent student is insufficient.
+          in Direct Unsubsidized Loan funds without parental support.
+      - question: How can a student verify that parents have ended financial
+          support or refused FAFSA completion?
+        answer: A student can verify this by obtaining a signed and dated
+          statement from one of their parents, as self-certification is
+          insufficient.
   - context: |-
-      Definition	of	<Parent=	for	Direct	PLUS	Loan	Purposes
-      If	they	meet	all	other	Direct	PLUS	Loan	eligibility	requirements,	the	following	individuals	can	borrow	Direct	PLUS	Loans	on behalf	of	a	dependent	undergraduate	student:
-      - The	student9s	biological	parent;
-      - The	student9s	legal	adoptive	parent;	or
-      - The	student9s	stepparent	(spouse	of	the	student9s	biological	or	legal	adoptive	parent	at	the	time	of	application),	but only	if	the	stepparent	is	required	to	provide	their	information	on	the	FAFSA	form	in	accordance	with	the	instructions on	the	FAFSA	form.
-      Grandparents	and	other	family	members	are	not	eligible	to	take	out	Direct	PLUS	Loans	on	behalf	of	a	dependent undergraduate	student	unless	they	have	legally	adopted	the	student.
-      In	addition	to	the	parent(s)	whose	resources	are	reported	on	a	student9s	FAFSA	form,	any	otherwise	eligible	biological	or legal	adoptive	parent	of	the	dependent	undergraduate	student	can	also	take	out	a	Direct	PLUS	Loan	on	the	student9s behalf,	even	if	that	parent9s	information	is	not	reported	on	the	FAFSA	form.
+      Definition of <Parent= for Direct PLUS Loan
+      Purposes
+      If they meet all other Direct PLUS Loan eligibility
+      requirements, the following individuals can borrow
+      Direct PLUS Loans on behalf of a dependent
+      undergraduate student:
+      - The student9s biological parent;
+      - The student9s legal adoptive parent; or
+      - The student9s stepparent (spouse of the student9s
+      biological or legal adoptive parent at the
+      time of application), but only if the stepparent
+      is required to provide their information on the
+      FAFSA form in accordance with the instructions on the
+      FAFSA form.
+      Grandparents and other family members are not eligible
+      to take out Direct PLUS Loans on behalf of a
+      dependent undergraduate student unless they have legally adopted the
+      student.
+      In addition to the parent(s) whose resources
+      are reported on a student9s FAFSA form, any
+      otherwise eligible biological or legal adoptive
+      parent of the dependent undergraduate student can
+      also take out a Direct PLUS Loan on the
+      student9s behalf, even if that parent9s information
+      is not reported on the FAFSA form.
     questions_and_answers:
       - question: Who can borrow Direct PLUS Loans on behalf of a dependent
           undergraduate student?
@@ -118,110 +215,194 @@ seed_examples:
           of the dependent undergraduate student can take out a Direct PLUS
           Loan, even if their information is not reported on the FAFSA form.
   - context: |-
-      Requirement	for	Dependent	Students	To	File	a	FAFSA	Form
-      In	all	cases,	the	dependent	student	on	whose	behalf	a	parent	has	applied	for	a	Direct	PLUS	Loan	must	have	filed	a	FAFSA form	and	received	an	Institutional	Student	Information	Record	(ISIR)	or	FAFSA	Submission	Summary	(see	Chapter	1	of	the Application	and	Verification	Guide	for	information	on	the	ISIR	and	FAFSA	Submission	Summary).	This	requirement	ensures that	student	eligibility	data	matches	are	conducted	to	verify	that	the	dependent	student	on	whose	behalf	the	parent	is borrowing:
-      - Is	not	in	default	on	a	Title	IV	loan	and	does	not	owe	an	overpayment	on	a	Title	IV	grant;
-      - Has	had	their	Social	Security	number	verified	by	the	Social	Security	Administration;	and
-      - Has	had	their	citizenship	status	confirmed	by	either	the	Social	Security	Administration	or	the	Department	of Homeland	Security.
-      Note	that	this	requirement	is	for	the student to	submit	a	FAFSA	form.	It	is	not	a	requirement	for	the	parent	borrower	to submit	a	FAFSA	form	in	the	parent9s	name,	and	it	does	not	preclude	an	otherwise	eligible	parent	whose	information	is	not included	on	the	FAFSA	form	(sometimes	referred	to	as	a	<non-custodial=	parent)	from	obtaining	a	Direct	PLUS	Loan.
+      Requirement for Dependent Students To File a
+      FAFSA Form
+      In all cases, the dependent student on whose
+      behalf a parent has applied for a Direct PLUS
+      Loan must have filed a FAFSA form and received
+      an Institutional Student Information Record (ISIR) or
+      FAFSA Submission Summary (see Chapter 1 of the
+      Application and Verification Guide for information on
+      the ISIR and FAFSA Submission Summary). This
+      requirement ensures that student eligibility data matches are
+      conducted to verify that the dependent student on
+      whose behalf the parent is borrowing:
+      - Is not in default on a Title IV loan and
+      does not owe an overpayment on a Title IV
+      grant;
+      - Has had their Social Security number verified by
+      the Social Security Administration; and
+      - Has had their citizenship status confirmed by
+      either the Social Security Administration or the
+      Department of Homeland Security.
+      Note that this requirement is for the student to
+      submit a FAFSA form. It is not a requirement
+      for the parent borrower to submit a FAFSA
+      form in the parent9s name, and it does not
+      preclude an otherwise eligible parent whose
+      information is not included on the FAFSA form
+      (sometimes referred to as a <non-custodial=
+      parent) from obtaining a Direct PLUS Loan.
     questions_and_answers:
-      - question: What is required of a dependent student for a parent to apply
-          for a Direct PLUS Loan?
-        answer: The dependent student must have filed a FAFSA form and received
-          an Institutional Student Information Record (ISIR) or FAFSA Submission
-          Summary.
-      - question: What does the dependent student's eligibility verification
-          ensure in the context of a Direct PLUS Loan?
-        answer: It ensures the student is not in default on a Title IV loan, has
-          a verified Social Security number, and has confirmed citizenship
-          status.
-      - question: Is it necessary for the parent borrower to submit a FAFSA form
-          in their own name to secure a Direct PLUS Loan for a dependent
-          student?
-        answer: No, it is not required for the parent borrower to submit a FAFSA
-          form in their own name; the dependent student's FAFSA submission is
-          sufficient.
+      - question: Who must file a FAFSA form for dependent students applying for
+          a Direct PLUS Loan?
+        answer: The dependent student on whose behalf a parent has applied for a
+          Direct PLUS Loan must file a FAFSA form.
+      - question: What does filing a FAFSA form ensure for dependent students?
+        answer: Filing a FAFSA form ensures that the dependent student's
+          eligibility data matches are conducted to verify they are not in
+          default on a Title IV loan, have a verified Social Security number,
+          and have confirmed citizenship status.
+      - question: Is it a requirement for the parent borrower to submit a FAFSA
+          form in their own name?
+        answer: No, it is not a requirement for the parent borrower to submit a
+          FAFSA form in their own name. This does not preclude an otherwise
+          eligible parent, whose information may not be included on the FAFSA
+          form, from obtaining a Direct PLUS Loan.
   - context: |-
-      Adverse	Credit	History
-      For	Direct	PLUS	Loan	eligibility	purposes,	<charged-off=	means	a	debt	that	has	been	written	off	as	a	loss,	but	that	is	still subject	to	collection	action.	<In	collection=	means	a	debt	that	has	been	placed	with	a	collection	agency	by	a	creditor	or that	is	subject	to	more	intensive	efforts	by	a	creditor	to	recover	amounts	owed	from	a	borrower	who	has	not	responded satisfactorily	to	the	routine	demands	of	the	creditor9s	billing	procedures.
-      An	applicant	cannot	be	denied	a	Direct	PLUS	Loan	because	they	have	no	credit	history.	That	is,	the	absence	of	a	credit history	is	not	considered	to	be	adverse	credit.
-      There	are	two	means	by	which	a	Direct	PLUS	Loan	applicant	with	an	adverse	credit	history	can	still	qualify	for	a	Direct PLUS	Loan.	One	option	is	for	the	applicant	to	obtain	an	endorser	who	doesn9t	have	an	adverse	credit	history.	An	endorser is	someone	who	agrees	to	repay	the	Direct	PLUS	Loan	if	the	borrower	doesn9t	repay	it.	For	a	parent	borrower,	the endorser	may	not	be	the	dependent	student	for	whom	the	parent	is	borrowing.
+      Adverse Credit History
+      For Direct PLUS Loan eligibility purposes,
+      <charged-off= means a debt that has been
+      written off as a loss, but that is still
+      subject to collection action. <In collection= means a
+      debt that has been placed with a collection
+      agency by a creditor or that is subject to
+      more intensive efforts by a creditor to
+      recover amounts owed from a borrower who has not
+      responded satisfactorily to the routine demands of the
+      creditor9s billing procedures.
+      An applicant cannot be denied a Direct PLUS
+      Loan because they have no credit history. That is,
+      the absence of a credit history is not considered
+      to be adverse credit.
+      There are two means by which a Direct PLUS
+      Loan applicant with an adverse credit history can
+      still qualify for a Direct PLUS Loan. One option is
+      for the applicant to obtain an endorser who
+      doesn9t have an adverse credit history. An endorser is
+      someone who agrees to repay the Direct PLUS Loan if
+      the borrower doesn9t repay it. For a parent
+      borrower, the endorser may not be the dependent
+      student for whom the parent is borrowing.
     questions_and_answers:
       - question: What does 'charged-off' mean in the context of Direct PLUS
           Loan eligibility?
         answer: Charged-off means a debt that has been written off as a loss but
           is still subject to collection action.
-      - question: Can an applicant be denied a Direct PLUS Loan due to lack of
-          credit history?
-        answer: No, an applicant cannot be denied a Direct PLUS Loan because
-          they have no credit history; it is not considered adverse credit.
+      - question: Can an applicant with no credit history be denied a Direct
+          PLUS Loan?
+        answer: No, the absence of a credit history is not considered adverse
+          credit and cannot result in loan denial.
       - question: How can a Direct PLUS Loan applicant with an adverse credit
           history still qualify for the loan?
-        answer: An applicant with adverse credit history can still qualify by
-          obtaining an endorser who does not have an adverse credit history,
-          agreeing to repay the loan if the borrower doesn't.
+        answer: An applicant can qualify by obtaining an endorser without an
+          adverse credit history, who agrees to repay the loan if the borrower
+          doesn't.
   - context: |-
-      Adverse	Credit	History
-      As	an	alternative	to	obtaining	an	endorser,	an	applicant	who	has	been	determined	to	have	an	adverse	credit	history	may also	qualify	for	a	Direct	PLUS	Loan	by	submitting	documentation	to	the	Department	showing	that	there	are	extenuating circumstances	associated	with	the	adverse	credit.	The	Department	has	the	final	decision	on	determining	whether extenuating	circumstances	exist.
-      A	borrower	who	qualifies	for	a	Direct	PLUS	Loan	by	obtaining	an	endorser	or	documenting	to	the	satisfaction	of	the Department	that	extenuating	circumstances	exist	must	also	complete	PLUS	Loan	Credit	Counseling,	as	discussed	below.
-      If	your	school	participates	in	the	Direct	PLUS	program	but	a	student9s	parent	cannot	obtain	a	Direct	PLUS	Loan,	the student	is	allowed	to	borrow	additional	unsubsidized	funds	(see	<Criteria	for	Dependent	Students	to	Receive	Additional Direct	Unsubsidized	Loan	Funds=	in	Chapter	4	of	this	volume).
-      Definition	of	<Adverse	Credit	History=
+      Adverse Credit History
+      As an alternative to obtaining an endorser,
+      an applicant who has been determined to
+      have an adverse credit history may also qualify for a
+      Direct PLUS Loan by submitting documentation to the
+      Department showing that there are extenuating circumstances
+      associated with the adverse credit. The Department has
+      the final decision on determining whether extenuating
+      circumstances exist.
+      A borrower who qualifies for a Direct
+      PLUS Loan by obtaining an endorser or
+      documenting to the satisfaction of the Department
+      that extenuating circumstances exist must also complete
+      PLUS Loan Credit Counseling, as discussed below.
+      If your school participates in the Direct PLUS
+      program but a student9s parent cannot obtain a
+      Direct PLUS Loan, the student is allowed to borrow
+      additional unsubsidized funds (see <Criteria for
+      Dependent Students to Receive Additional Direct
+      Unsubsidized Loan Funds= in Chapter 4 of this
+      volume).
+      Definition of <Adverse Credit History=
     questions_and_answers:
-      - question: What is an alternative for an applicant with adverse credit
+      - question: What is an alternative for applicants with adverse credit
           history to obtain a Direct PLUS Loan?
-        answer: An applicant with adverse credit history can submit
-          documentation to the Department showing extenuating circumstances
-          associated with the adverse credit to qualify for a Direct PLUS Loan.
-      - question: Who has the final decision on determining if extenuating
+        answer: Applicants with adverse credit history can submit documentation
+          to the Department showing extenuating circumstances associated with
+          the adverse credit to qualify for a Direct PLUS Loan.
+      - question: Who has the final decision on determining whether extenuating
           circumstances exist for a Direct PLUS Loan?
         answer: The Department has the final decision on determining whether
           extenuating circumstances exist for a Direct PLUS Loan.
       - question: What additional requirement must a borrower fulfill if they
-          qualify for a Direct PLUS Loan through an endorser or extenuating
-          circumstances?
-        answer: A borrower who qualifies for a Direct PLUS Loan through an
-          endorser or by documenting extenuating circumstances must complete
-          PLUS Loan Credit Counseling.
+          qualify for a Direct PLUS Loan through extenuating circumstances or an
+          endorser?
+        answer: A borrower who qualifies for a Direct PLUS Loan through
+          extenuating circumstances or an endorser must complete PLUS Loan
+          Credit Counseling.
   - context: |-
-      Adverse	Credit	History	and	Default
-      Although	a	default	on	a	Title	IV	loan	will	generally	appear	in	a	student	or	parent	Direct	PLUS	Loan	applicant9s	credit	record and	result	in	the	individual	being	determined	to	have	an	adverse	credit	history,	being	in	default	on	a	Title	IV	loan	and having	an	adverse	credit	history	are	separate	eligibility	issues.	A	Direct	PLUS	Loan	applicant	who	is	identified	through	the Department9s	National	Student	Loan	Data	System	(NSLDS)	as	being	in	default	on	a	Title	IV	loan	and	who	has	also	been determined	to	have	an	adverse	credit	history	(due	to	the	default	and/or	other	adverse	credit	conditions)	cannot	qualify	for a	Direct	PLUS	Loan	simply	by	obtaining	an	endorser	or	by	providing	acceptable	documentation	of	extenuating circumstances.	The	applicant	must	also	separately	resolve	the	default	status	by	one	of	the	means	discussed	under <Resolving	Default	Status=	in	Volume	1,	Chapter	3.
+      Adverse Credit History and Default
+      Although a default on a Title IV loan
+      will generally appear in a student or parent
+      Direct PLUS Loan applicant9s credit record and result in
+      the individual being determined to have an
+      adverse credit history, being in default on a
+      Title IV loan and having an adverse credit history are
+      separate eligibility issues. A Direct PLUS Loan
+      applicant who is identified through the Department9s
+      National Student Loan Data System (NSLDS) as being in
+      default on a Title IV loan and who has
+      also been determined to have an adverse credit history
+      (due to the default and/or other adverse credit conditions)
+      cannot qualify for a Direct PLUS Loan simply by obtaining
+      an endorser or by providing acceptable
+      documentation of extenuating circumstances. The applicant
+      must also separately resolve the default status by one
+      of the means discussed under <Resolving Default
+      Status= in Volume 1, Chapter 3.
     questions_and_answers:
       - question: What happens if a student or parent Direct PLUS Loan applicant
           has a default on a Title IV loan?
         answer: A default on a Title IV loan will appear in the applicant's
           credit record and result in them being determined to have an adverse
           credit history.
-      - question: Can an applicant with an adverse credit history due to a Title
-          IV loan default qualify for a Direct PLUS Loan with an endorser or
-          extenuating circumstances documentation?
-        answer: No, the applicant must also separately resolve the default
-          status, regardless of obtaining an endorser or providing extenuating
-          circumstances documentation.
-      - question: Where can the Department identify a Direct PLUS Loan
-          applicant's default status?
-        answer: The Department identifies a Direct PLUS Loan applicant's default
-          status through the National Student Loan Data System (NSLDS).
+      - question: Can an applicant with a Title IV loan default and adverse
+          credit history qualify for a Direct PLUS Loan with an endorser?
+        answer: No, an applicant cannot qualify for a Direct PLUS Loan simply by
+          obtaining an endorser if they are in default on a Title IV loan and
+          have an adverse credit history.
+      - question: What must an applicant do if identified as being in default on
+          a Title IV loan and having an adverse credit history?
+        answer: The applicant must separately resolve the default status by one
+          of the means discussed under Resolving Default Status in Volume 1,
+          Chapter 3.
   - context: |-
-      | | | District Attorney and Indigent Legal Service Attorney Loan Forgiveness Program |
-      |---:|:----------------|:-------------------------------------------------------------------------------------------------------------|
-      | 0 | | ww.hesc.com/content.nsf/SFC/District_Attorney_and_Indigent_Legal_Services_Attorney_Loan_Forgiveness_Program) |
-      | 1 | e to qualifying | law students who serve as district attorneys, assistant district attorneys or indigent legal service |
+      | | 2. | Nonstandard terms that are substantially equal, but one
+      or more of the terms in the academic year contains fewer
+      than nine weeks. | Non- SE9W |
+      |---:|-----:|:----------------------------------------------------
+      -------------------------------------------------------------------
+      --------------------------------------------------|:------------|
+      | 0 | 3 | Nonstandard terms that are not substantially equal in length
+      (one or more of the terms in the academic year differs in length from
+      another term by more than two weeks). | Non- SE9W |
     questions_and_answers:
-      - question: Who is eligible for the District Attorney and Indigent Legal
-          Service Attorney Loan Forgiveness Program?
-        answer: Law students who serve as district attorneys, assistant district
-          attorneys, or indigent legal service attorneys are eligible.
-      - question: What type of individuals does this loan forgiveness program
-          focus on serving?
-        answer: The program focuses on supporting district attorneys, assistant
-          district attorneys, and indigent legal service attorneys.
-      - question: Is there a web address provided for more information on this
-          program?
-        answer: Yes, additional information can be found at
-          <https://www.hesc.com/content.nsf/SFC/District_Attorney_and_Indigent_Legal_Services_Attorney_Loan_Forgiveness_Program>.
-document_outline: ''
+      - question: What does 'Nonstandard terms that are substantially equal, but
+          one or more of the terms in the academic year contains fewer than nine
+          weeks' refer to?
+        answer: This refers to non-SE9W academic terms where all terms are
+          roughly equal in length, but at least one term has fewer than nine
+          weeks.
+      - question: What is described by 'Nonstandard terms that are not
+          substantially equal in length'?
+        answer: Non-SE9W academic terms are described here, where the lengths of
+          terms differ by more than two weeks from at least one other term.
+      - question: What criteria distinguish 'Non-SE9W' terms from standard terms
+          in the academic year?
+        answer: Non-SE9W terms are those that do not meet the standard criteria
+          of either having all terms substantially equal with no term shorter
+          than nine weeks or having all terms equal in length with no term
+          differing by more than two weeks.
+document_outline: Guidance on the Federal Direct Loan Program
 document:
-  repo: ''
-  commit: ''
+  repo: https://github.com/agapebondservant/doed-poc
+  commit: d0b12df7568a5422725d526ff88e0c177c5c1981
   patterns:
-    - ''
+    - 'scraped/studentaid/handbook/volume 8/*.md'

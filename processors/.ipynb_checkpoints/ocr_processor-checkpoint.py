@@ -8,7 +8,10 @@ from docling.models.ocr_mac_model import OcrMacOptions
 import os
 import shutil
 import pandas
+import data_collection_processor
+from data_collection_processor import DataCollectionProcessor
 import importlib
+importlib.reload(data_collection_processor)
 
 class OcrProcessor:
     def __init__(self, **kwargs):
@@ -59,23 +62,20 @@ class OcrProcessor:
                             
 if __name__ == "__main__":              
     processor = OcrProcessor()
-    input_dirs = \
-    [f"{Path.cwd()}/resources/studentaid/handbook/application and verification",
-    f"{Path.cwd()}/resources/studentaid/handbook/volume 3",
-    f"{Path.cwd()}/resources/studentaid/handbook/volume 7",
-    f"{Path.cwd()}/resources/studentaid/handbook/volume 8",
-    f"{Path.cwd()}/resources/studentaid/state scholarships"]
-    output_dirs = \
-    [f"{Path.cwd()}/scraped/studentaid/handbook/application and verification",
-    f"{Path.cwd()}/scraped/studentaid/handbook/volume 3",
-    f"{Path.cwd()}/scraped/studentaid/handbook/volume 7",
-    f"{Path.cwd()}/scraped/studentaid/handbook/volume 8",
-    f"{Path.cwd()}/scraped/studentaid/state scholarships"]
-    review_dirs = \
-    [f"{Path.cwd()}/tables/studentaid/handbook/application and verification",
-    f"{Path.cwd()}/tables/studentaid/handbook/volume 3",
-    f"{Path.cwd()}/tables/studentaid/handbook/volume 7",
-    f"{Path.cwd()}/tables/studentaid/handbook/volume 8",
-    f"{Path.cwd()}/tables/studentaid/state scholarships"]
-    for input_dir, output_dir, review_dir in zip(input_dirs, output_dirs, review_dirs):
-        processor.process(input_dir, output_dir, review_dir)
+    data_collector = DataCollectionProcessor()
+    
+    try:
+
+        input_dirs, output_dirs, review_dirs = data_collector.process(
+            f"{Path(__file__).resolve().parents[1]}/resources", 
+            f"{Path(__file__).resolve().parents[1]}/scraped",
+            f"{Path(__file__).resolve().parents[1]}/tables")
+
+        for input_dir, output_dir, review_dir in zip(input_dirs, output_dirs, review_dirs):
+            processor.process(input_dir, output_dir, review_dir)
+        
+    except Exception as e:
+        
+        print("An exception occurred:")
+        traceback.print_exc()
+        print(f"Exception message: {e}")

@@ -1,7 +1,7 @@
 ---
 version: 3
-domain: ''
-created_by: ''
+domain: 'volume 3'
+created_by: 'oawofolu'
 seed_examples:
   - context: |-
       Introduction
@@ -195,52 +195,6 @@ seed_examples:
         answer: A week of instructional time may begin up to six days before the
           first day of scheduled instruction or exams in a payment period.
   - context: |-
-      Regulatory Citations
-      Reductions in academic year length: HEA Sec.
-      481(a)(2)(B) and 34 CFR 668.3(c)
-      34 CFR 600.2 (academic engagement)
-      34 CFR 600.2 (distance education)
-      Volume 3, Chapter 1, Example 1: Counting Weeks of
-      Instructional Time
-      The calendar graphic below illustrates how a
-      school would count weeks of instructional time in a
-      standard semester term during which classes are held
-      Monday through Friday. In this hypothetical term (the
-      example is not meant to illustrate any specific
-      calendar year) classes begin on Monday, August 23rd, and
-      end on Friday, December 10th, with examinations
-      held December 13th-17th.
-      The circles indicate the points at which each of
-      the 17 weeks of instructional time begin.
-      There are no classes on Labor Day (September
-      6th), Veterans Day (November 11th), or during
-      Thanksgiving break (November 24th-26th), but each
-      week that includes these dates still counts as a
-      week of instructional time since each includes at
-      least one day of regularly scheduled
-      instruction. The week of exams that begins on December
-      13th also counts as a week of instructional
-      time.
-    questions_and_answers:
-      - question: What are the regulatory sections and CFRs mentioned regarding
-          reductions in academic year length?
-        answer: The regulatory sections mentioned are HEA Sec. 481(a)(2)(B) and
-          34 CFR 668.3(c), along with 34 CFR 600.2 for academic and distance
-          education.
-      - question: How does the example calendar illustrate instructional time
-          counting in a semester term?
-        answer: The example calendar shows a semester term from August 23rd to
-          December 10th, with classes held Monday through Friday, and counts
-          weeks with at least one day of regular instruction, including holidays
-          like Labor Day, Veterans Day, and Thanksgiving break.
-      - question: Which weeks are considered instructional time despite holidays
-          or breaks in the given example calendar?
-        answer: In the example calendar, weeks containing holidays like Labor
-          Day, Veterans Day, and Thanksgiving break, as well as the week of
-          exams from December 13th to 17th, are still counted as instructional
-          time because they include at least one day of regularly scheduled
-          instruction.
-  - context: |-
       Academic Calendars and Terms
       Schools offer programs with many kinds of academic
       calendars that differ from the traditional fall-spring
@@ -322,9 +276,11 @@ seed_examples:
           non-term, or subscription-based) has implications for how Title IV aid
           is awarded and disbursed, though specifics are not provided in the
           paragraph.
-document_outline: ''
+document_outline: Guidance on academic calendars, payment periods,
+  disbursement requirements for awarding aid under Title IV, and
+  cost of attendance
 document:
-  repo: ''
-  commit: ''
+  repo: https://github.com/agapebondservant/doed-poc
+  commit: d0b12df7568a5422725d526ff88e0c177c5c1981
   patterns:
-    - ''
+    - 'scraped/studentaid/handbook/volume 3/*.md'

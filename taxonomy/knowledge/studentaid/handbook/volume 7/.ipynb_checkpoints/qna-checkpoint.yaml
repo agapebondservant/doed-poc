@@ -1,8 +1,45 @@
 ---
 version: 3
-domain: ''
-created_by: ''
+domain: 'volume 7'
+created_by: 'oawofolu'
 seed_examples:
+  - context: |-
+      34 CFR 668.2
+      A student with a baccalaureate or professional
+      degree is ineligible even if the degree is
+      from an unaccredited school or is not accepted for
+      admission or transfer credit by your school.
+      Similarly, a student with a baccalaureate or
+      professional degree from a foreign school usually isn9t
+      eligible for a Pell Grant. But because a
+      foreign degree often won9t translate neatly into the
+      American classification, the school must judge whether it
+      equates to a U.S. bachelor9s degree. If the student
+      provides written documentation that the foreign degree is
+      not equivalent to a bachelor9s degree awarded in
+      the United States, you may determine that the
+      student does not have a bachelor9s degree. Documents
+      supporting such a conclusion may include information
+      about the type of school the student attended and
+      total years of education leading to the degree.
+    questions_and_answers:
+      - question: Can a student with a baccalaureate degree from an unaccredited
+          school in the US receive a Pell Grant?
+        answer: No, a student with a baccalaureate degree from an unaccredited
+          school is ineligible for a Pell Grant, regardless of whether the
+          degree is accepted for admission or transfer credit by the student's
+          school.
+      - question: What about a student with a baccalaureate degree from a
+          foreign school? Are they eligible for a Pell Grant?
+        answer: Generally, a student with a baccalaureate degree from a foreign
+          school is not eligible for a Pell Grant, but the school must evaluate
+          if the foreign degree equates to a U.S. bachelor's degree.
+      - question: What kind of documentation can a student provide to prove
+          their foreign degree is not equivalent to a U.S. bachelor's degree?
+        answer: A student can provide written documentation, including
+          information about the type of school attended and total years of
+          education leading to the degree, to demonstrate that their foreign
+          degree is not equivalent to a U.S. bachelor's degree.
   - context: |-
       34 CFR 668.2
       A student enrolled in a program that lasts
@@ -29,24 +66,18 @@ seed_examples:
       student accepted the degree), then the student is
       no longer eligible to receive a Pell Grant.
     questions_and_answers:
-      - question: Can a student enrolled in a program longer than five years,
-          like a six-year pharmacy program, be considered an undergraduate
-          beyond the first three or four years?
-        answer: No, such students are considered undergraduates only for the
-          first three or four years. Afterward, they must be considered graduate
-          students.
-      - question: What is the status of students enrolled in dual-degree
-          programs that confer both a bachelor's degree and a graduate or first
-          professional degree?
-        answer: These students are considered undergraduates for at least the
-          first three years, with the school determining when they cease to be
-          undergraduates.
-      - question: What happens if a student completes all bachelor's degree
-          requirements but continues taking undergraduate courses without
-          accepting the degree?
-        answer: The school must decide when the student completed the
-          baccalaureate course of study. If the school determines completion,
-          the student becomes ineligible for a Pell Grant.
+      - question: How long can a student be considered an undergraduate in a
+          program longer than five years?
+        answer: A student can be considered an undergraduate for the first three
+          or four years of a program that lasts longer than five years.
+      - question: What happens to a student's Pell Grant eligibility if they
+          complete a bachelor's program but choose not to accept the degree?
+        answer: If a student completes a bachelor's program, regardless of
+          degree acceptance, they become ineligible for a Pell Grant.
+      - question: Who determines when a student in a dual-degree program ceases
+          to be an undergraduate student?
+        answer: The school determines at what point after three years the
+          student ceases to be an undergraduate student.
   - context: |-
       Wrong Grade Level on the FAFSA Form
       When an undergraduate student incorrectly reports on the
@@ -82,28 +113,24 @@ seed_examples:
           their status on the FAFSA form?
         answer: If an undergraduate student incorrectly reports their status as
           a graduate student or having a bachelor's degree, they must correct
-          the information. Failure to do so will make the student ineligible for
-          a Pell Grant, and the school won't be able to pay the student a Pell
-          Grant.
-      - question: Can a student enrolled in a postbaccalaureate teacher
-          certification or licensure program receive a Pell Grant?
-        answer: Yes, a student enrolled at least half-time in a
-          postbaccalaureate teacher certification or licensure program can
-          receive a Pell Grant for the duration of the program, provided the
-          program does not lead to a graduate degree, the school doesn't offer a
-          bachelor's degree in education, the student is pursuing initial
-          teacher certification or licensing within a state, and the program
-          consists of courses required by a state for professional certification
-          or licensing necessary for teacher employment in elementary or
-          secondary schools.
-      - question: What are the conditions for a postbaccalaureate program to
-          make a student eligible for a Pell Grant?
-        answer: A postbaccalaureate program must not lead to a graduate degree,
-          not offer a bachelor's degree in education, be pursued for initial
-          teacher certification or licensing within a state, and consist of
-          courses required by a state for professional certification or
-          licensing necessary for teacher employment in elementary or secondary
-          schools to make a student eligible for a Pell Grant.
+          the information. Otherwise, the student will be shown as ineligible
+          for Pell Grant.
+      - question: What are the eligibility criteria for a postbaccalaureate
+          teacher certification or licensure program to receive a Pell Grant?
+        answer: A student enrolled at least half-time in a postbaccalaureate
+          teacher certification or licensure program is eligible for a Pell
+          Grant if the program does not lead to a graduate degree, the school
+          doesn't offer a bachelor's degree in education, the student is
+          pursuing initial teacher certification or licensing credential within
+          a state, and the program consists of courses required by a state for
+          professional certification or licensing credential necessary for
+          employment as a teacher.
+      - question: What consequences may occur if the FAFSA application is not
+          corrected for an undergraduate student?
+        answer: If the FAFSA application is not corrected for an undergraduate
+          student, the Department's records will show the student as ineligible
+          for a Pell Grant, and the school won't be able to pay the student a
+          Pell Grant.
   - context: |-
       Wrong Grade Level on the FAFSA Form
       Under this very limited provision , a postbaccalaureate
@@ -124,18 +151,18 @@ seed_examples:
       would not be eligible for a Federal
       Supplemental Educational Opportunity Grant (FSEOG).
     questions_and_answers:
-      - question: What is a postbaccalaureate program defined as according to
-          the limited provision mentioned?
+      - question: What is a postbaccalaureate program according to the FAFSA
+          form?
         answer: A postbaccalaureate program is defined as a program that
           generally requires a student to have a bachelor's degree before being
           admitted.
       - question: Can undergraduate students routinely enroll in a
-          postbaccalaureate program for Title IV purposes?
+          postbaccalaureate program for FAFSA purposes?
         answer: No, undergraduate students cannot routinely enroll in a
-          postbaccalaureate program for Title IV purposes; such a student is
-          treated as enrolled in an undergraduate program.
-      - question: What loan limits and aid is a student eligible for if they
-          receive a Pell Grant under this provision?
+          postbaccalaureate program for FAFSA purposes, as it would not meet the
+          definition of such a program.
+      - question: What financial aid is a student eligible for if they receive a
+          Pell Grant under this provision on the FAFSA form?
         answer: A student receiving a Pell Grant under this provision is
           eligible for Federal Work-Study and fifth-year undergraduate Direct
           Loan limits but not for a Federal Supplemental Educational Opportunity
@@ -167,18 +194,18 @@ seed_examples:
       - question: Can students with a bachelor's degree still be eligible for
           Pell Grants?
         answer: Yes, students who correctly report having a bachelor's degree
-          but are also enrolled in a teaching credential program can be listed
-          as Pell-eligible under the postbaccalaureate program provision.
+          but are also in a teaching credential program can be listed as
+          Pell-eligible under the postbaccalaureate program provision.
       - question: Is it possible for a student to receive Pell Grant payments
           from multiple schools simultaneously?
         answer: No, a student cannot receive Pell Grant payments concurrently
           from more than one school. If awarded for concurrent enrollment, the
           student must choose only one award from a single school.
-      - question: What factors determine if a student falls under the eligible
-          postbaccalaureate provision for Pell Grants?
-        answer: A student must have a bachelor's degree and be enrolled in a
-          teaching credential program to be considered under the eligible
-          postbaccalaureate provision for Pell Grants.
+      - question: What determines if a student falls under the eligible
+          postbaccalaureate provision for Pell Grant eligibility?
+        answer: A student's determination under the eligible postbaccalaureate
+          provision for Pell Grant eligibility depends on correctly reporting a
+          bachelor's degree and being enrolled in a teaching credential program.
   - context: |-
       Eligible Postbaccalaureate Program and the FAFSA
       For Pell purposes, the phrase <concurrently
@@ -203,18 +230,21 @@ seed_examples:
       student's withdrawal from the prior school.
     questions_and_answers:
       - question: What does 'concurrently from more than one institution' mean
-          in the context of Pell Grant eligibility?
-        answer: It means a student must be attending both schools simultaneously
-          for the concurrent Pell Grant prohibition to apply.
-      - question: What happens if a Pell-eligible student withdraws from one
-          institution and enrolls in another during the same payment period?
-        answer: The new institution can award Pell Grant funds for any remaining
-          portion of the overlapping payment period, provided the student meets
-          certain withdrawal exemptions.
-      - question: What documentation should the new institution maintain
-          regarding Pell Grant disbursement for a transfer student?
-        answer: The new institution should keep records in the student's file
-          supporting a Pell Grant disbursement at that institution following the
+          for Pell purposes?
+        answer: For Pell purposes, 'concurrently from more than one institution'
+          means a student must be attending both schools simultaneously for the
+          concurrent Pell Grant prohibition to apply.
+      - question: What happens if a student withdraws from one school and
+          enrolls in another during the same payment period?
+        answer: If a Pell-eligible student withdraws from one institution and
+          enrolls in another during the same payment period, meeting Return of
+          Title IV Funds (R2T4) withdrawal exemptions, the new institution can
+          award Pell Grant funds for any remaining portion of the overlapping
+          payment period.
+      - question: What documentation should the new institution maintain for a
+          transfer student's Pell Grant disbursement?
+        answer: The new institution should maintain documentation in the
+          student's file supporting a Pell Grant disbursement following the
           student's withdrawal from the prior school.
   - context: |-
       Cost of Attendance for Incarcerated Students
@@ -249,20 +279,55 @@ seed_examples:
     questions_and_answers:
       - question: What expenses are typically included in the cost of attendance
           for incarcerated students?
-        answer: The cost of attendance for incarcerated students includes
-          tuition, fees, books, course materials, supplies, equipment, and the
-          cost of obtaining a license, certification, or a first professional
-          credential.
-      - question: Can incarcerated individuals receive Pell Grant funds
-          exceeding their cost of attendance?
+        answer: The cost of attendance for incarcerated students usually
+          includes tuition, fees, books, course materials, supplies, equipment,
+          and the cost of obtaining a license, certification, or a first
+          professional credential.
+      - question: Can incarcerated individuals receive Pell Grant funds beyond
+          their cost of attendance?
         answer: No, incarcerated individuals cannot receive Pell Grant funds
-          exceeding their cost of attendance and are not eligible for a Title IV
+          beyond their cost of attendance and are not eligible for a Title IV
           credit balance.
-      - question: What are the regulations regarding credit balances for
-          confined or incarcerated individuals under Pell Grant?
-        answer: According to 34 CFR 668, Subpart P, prison education programs
-          have specific requirements, and 34 CFR 690.62(b)(1) prohibits the
-          issuance of credit balances for confined or incarcerated individuals.
+      - question: What happens if a credit balance is created for an
+          incarcerated student receiving Pell Grant funds?
+        answer: If a credit balance is created, the school must return the Pell
+          Grant funds associated with the credit balance to the Department,
+          which will be credited to the student's remaining Pell eligibility.
+  - context: |-
+      Cost of Attendance for Incarcerated Students
+      The U.S. Department of Defense does not provide
+      confirmation that a service member killed in the
+      line of duty meets the special eligibility criteria.
+      Further, no comprehensive federal database exists to
+      effectively and efficiently identify public safety
+      officers killed in the line of duty. Therefore,
+      students will self-identify potential eligibility on
+      the FAFSA form, and the school will be required
+      to confirm eligibility by collecting supporting
+      documentation from the student. Once you document
+      and certify Special Rule eligibility for a maximum Pell
+      Grant award, neither your school nor any other school is
+      required to redetermine that student's eligibility for
+      subsequent award years if the student continues to
+      meet all other Pell Grant eligibility requirements and
+      the age requirement for the Special Rule.
+      Acceptable documentation may include, but is not
+      limited to, the following:
+    questions_and_answers:
+      - question: Who is responsible for confirming the eligibility of
+          incarcerated students for the maximum Pell Grant award?
+        answer: The school is required to confirm eligibility by collecting
+          supporting documentation from the student.
+      - question: What type of documentation can be used to establish
+          eligibility for incarcerated students under the Special Rule?
+        answer: Acceptable documentation may include, but is not limited to,
+          proof of service member death in line of duty or public safety officer
+          death in line of duty.
+      - question: Is there a federal database to identify public safety officers
+          killed in the line of duty for Pell Grant eligibility?
+        answer: No, there is no comprehensive federal database to effectively
+          and efficiently identify public safety officers killed in the line of
+          duty.
   - context: |-
       Cost of Attendance for Incarcerated Students
       - A copy of the servicemember9s DD Form 1300
@@ -293,44 +358,52 @@ seed_examples:
       eligible occupation of the parent or guardian.
     questions_and_answers:
       - question: What documents are required to prove the servicemember's death
-          in the line of duty?
+          in line of duty?
         answer: A copy of the servicemember's DD Form 1300 (Report of Casualty)
           and DD Form 214, along with a death certificate, are required.
       - question: What is the role of the Department of Veterans Affairs in this
           process?
         answer: The Department of Veterans Affairs provides a Death Narrative
-          Document to support the eligibility of the deceased servicemember.
-      - question: What additional documentation may be accepted by the school to
-          establish the eligibility of the student?
-        answer: The school may accept a written letter of attestation from a
-          state or local government official, or other documentation from a
-          credible source describing the circumstances of the death and the
-          eligible occupation of the parent or guardian.
+          Document as part of the required documentation.
+      - question: What kind of letter or determination is needed from a state or
+          local government official?
+        answer: A written letter of attestation or determination from a state or
+          local government official with relevant authority is needed,
+          confirming the individual died in the line of duty as a public safety
+          officer.
   - context: |-
-      | | | District Attorney and Indigent Legal Service
-      Attorney Loan Forgiveness Program |
-      |---:|:----------------|:--------------------------------------------------
-      -----------------------------------------------------------|
-      | 0 | | ww.hesc.com/content.nsf/SFC/District_Attorney_and_
-      Indigent_Legal_Services_Attorney_Loan_Forgiveness_Program) |
-      | 1 | e to qualifying | law students who serve as district attorneys,
-      assistant district attorneys or indigent legal service |
+      | | Eligibility Determination | FAFSA Partner Portal Field | Indicator
+      Value |
+      |---:|:----------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------|:-------------------------------------|
+      | 0 | Eligible 3 Special Rule (died in the line of duty while
+      serving on active duty as a member of the U.S. Armed Forces on
+      or after September 11, 2001) | IASG Indicator | 1 3 Eligible for IASG |
+      | 1 | Eligible 3 Legacy IASG | IASG Indicator | 2 3 Eligible,
+      grandfathered for IASG |
+      | 2 | Eligible 3 Special Rule (died in the line of duty while
+      actively serving as and performing the duties of a public
+      safety officer) | CFH Indicator | 1 3 Eligible for CFH |
+      | 3 | Eligible 3 Legacy CFH | CFH Indicator |
+      2 3 Eligible, grandfathered for |
     questions_and_answers:
-      - question: Who is eligible for the District Attorney and Indigent Legal
-          Service Attorney Loan Forgiveness Program?
-        answer: Law students who serve as district attorneys, assistant district
-          attorneys, or indigent legal service attorneys are eligible.
-      - question: What type of individuals does this loan forgiveness program
-          focus on serving?
-        answer: The program focuses on supporting district attorneys, assistant
-          district attorneys, and indigent legal service attorneys.
-      - question: Is there a web address provided for more information on this
-          program?
-        answer: Yes, additional information can be found at
-          <https://www.hesc.com/content.nsf/SFC/District_Attorney_and_Indigent_Legal_Services_Attorney_Loan_Forgiveness_Program>.
-document_outline: ''
+      - question: What is the Eligibility Determination for the IASG Indicator
+          with value '1 3 Eligible for IASG'?
+        answer: The Eligibility Determination is for those who died in the line
+          of duty while serving on active duty as a member of the U.S. Armed
+          Forces on or after September 11, 2001.
+      - question: What does the FAFSA Partner Portal Field 'IASG Indicator' with
+          value '2 3 Eligible, grandfathered for IASG' indicate?
+        answer: It indicates eligibility under the Legacy IASG, meaning the
+          individual is grandfathered for IASG benefits.
+      - question: What is the Eligibility Determination for the CFH Indicator
+          with value '1 3 Eligible for CFH'?
+        answer: The Eligibility Determination is for those who died in the line
+          of duty while actively serving as and performing the duties of a
+          public safety officer.
+document_outline: Assists with student eligibility for
+  Federal Pell Grants
 document:
-  repo: ''
-  commit: ''
+  repo: https://github.com/agapebondservant/doed-poc
+  commit: d0b12df7568a5422725d526ff88e0c177c5c1981
   patterns:
-    - ''
+    - 'scraped/studentaid/handbook/volume 7/*.md'

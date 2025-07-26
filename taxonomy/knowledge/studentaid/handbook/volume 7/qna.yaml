@@ -1,8 +1,45 @@
 ---
 version: 3
-domain: ''
-created_by: ''
+domain: 'volume 7'
+created_by: 'oawofolu'
 seed_examples:
+  - context: |-
+      34 CFR 668.2
+      A student with a baccalaureate or professional
+      degree is ineligible even if the degree is
+      from an unaccredited school or is not accepted for
+      admission or transfer credit by your school.
+      Similarly, a student with a baccalaureate or
+      professional degree from a foreign school usually isn9t
+      eligible for a Pell Grant. But because a
+      foreign degree often won9t translate neatly into the
+      American classification, the school must judge whether it
+      equates to a U.S. bachelor9s degree. If the student
+      provides written documentation that the foreign degree is
+      not equivalent to a bachelor9s degree awarded in
+      the United States, you may determine that the
+      student does not have a bachelor9s degree. Documents
+      supporting such a conclusion may include information
+      about the type of school the student attended and
+      total years of education leading to the degree.
+    questions_and_answers:
+      - question: Can a student with a baccalaureate degree from an unaccredited
+          school in the US receive a Pell Grant?
+        answer: No, a student with a baccalaureate degree from an unaccredited
+          school is ineligible for a Pell Grant, regardless of whether the
+          degree is accepted for admission or transfer credit by the student's
+          school.
+      - question: What about a student with a baccalaureate degree from a
+          foreign school? Are they eligible for a Pell Grant?
+        answer: Generally, a student with a baccalaureate degree from a foreign
+          school is not eligible for a Pell Grant, but the school must evaluate
+          if the foreign degree equates to a U.S. bachelor's degree.
+      - question: What kind of documentation can a student provide to prove
+          their foreign degree is not equivalent to a U.S. bachelor's degree?
+        answer: A student can provide written documentation, including
+          information about the type of school attended and total years of
+          education leading to the degree, to demonstrate that their foreign
+          degree is not equivalent to a U.S. bachelor's degree.
   - context: |-
       34 CFR 668.2
       A student enrolled in a program that lasts
@@ -335,12 +372,19 @@ seed_examples:
           confirming the individual died in the line of duty as a public safety
           officer.
   - context: |-
-      | | Eligibility Determination | FAFSA Partner Portal Field | Indicator Value |
+      | | Eligibility Determination | FAFSA Partner Portal Field | Indicator
+      Value |
       |---:|:----------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------|:-------------------------------------|
-      | 0 | Eligible 3 Special Rule (died in the line of duty while serving on active duty as a member of the U.S. Armed Forces on or after September 11, 2001) | IASG Indicator | 1 3 Eligible for IASG |
-      | 1 | Eligible 3 Legacy IASG | IASG Indicator | 2 3 Eligible, grandfathered for IASG |
-      | 2 | Eligible 3 Special Rule (died in the line of duty while actively serving as and performing the duties of a public safety officer) | CFH Indicator | 1 3 Eligible for CFH |
-      | 3 | Eligible 3 Legacy CFH | CFH Indicator | 2 3 Eligible, grandfathered for |
+      | 0 | Eligible 3 Special Rule (died in the line of duty while
+      serving on active duty as a member of the U.S. Armed Forces on
+      or after September 11, 2001) | IASG Indicator | 1 3 Eligible for IASG |
+      | 1 | Eligible 3 Legacy IASG | IASG Indicator | 2 3 Eligible,
+      grandfathered for IASG |
+      | 2 | Eligible 3 Special Rule (died in the line of duty while
+      actively serving as and performing the duties of a public
+      safety officer) | CFH Indicator | 1 3 Eligible for CFH |
+      | 3 | Eligible 3 Legacy CFH | CFH Indicator |
+      2 3 Eligible, grandfathered for |
     questions_and_answers:
       - question: What is the Eligibility Determination for the IASG Indicator
           with value '1 3 Eligible for IASG'?
@@ -356,9 +400,10 @@ seed_examples:
         answer: The Eligibility Determination is for those who died in the line
           of duty while actively serving as and performing the duties of a
           public safety officer.
-document_outline: ''
+document_outline: Assists with student eligibility for
+  Federal Pell Grants
 document:
-  repo: ''
-  commit: ''
+  repo: https://github.com/agapebondservant/doed-poc
+  commit: d0b12df7568a5422725d526ff88e0c177c5c1981
   patterns:
-    - ''
+    - 'scraped/studentaid/handbook/volume 7/*.md'
