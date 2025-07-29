@@ -281,6 +281,6 @@ document_outline: Guidance on academic calendars, payment periods,
   cost of attendance
 document:
   repo: https://github.com/agapebondservant/doed-poc
-  commit: d0b12df7568a5422725d526ff88e0c177c5c1981
+  commit: 785fb390ba45c02220c339bcf3a71450a9d69563
   patterns:
     - 'scraped/studentaid/handbook/volume_3/*.md'
