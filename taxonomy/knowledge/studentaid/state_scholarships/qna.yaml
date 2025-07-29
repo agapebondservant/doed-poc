@@ -6,62 +6,33 @@ seed_examples:
   - context: |-
       Oklahoma Scholarships
       Live in Oklahoma? Attending college or thinking of attending college in
-      Oklahoma? Scholarships, naturally, are the best way to fund your education,
+      Oklahoma? Scholarships, naturally, are the best way to fund your
+      education,
       since you don't have to pay them back and Scholarships.com can help you
       find them. A college education can become quite expensive. Luckily,
-      financial aid is readily available to those willing to do the research. For
+      financial aid is readily available to those willing to do the research.
+      For
       example, Scholarships.com can help you find information about scholarships
       especially created for those living in Oklahoma. The scholarships below
       will give you an idea of the opportunities that may be found at
       Scholarships.com. To get the full benefit of our free services and for
-      additional information about Oklahoma college scholarships and awards based
-      on different search criteria, you should conduct a free college scholarship
+      additional information about Oklahoma college scholarships and awards
+      based
+      on different search criteria, you should conduct a free college
+      scholarship
       search at Scholarships.com.
-      The 25 Best Oklahoma Scholarships with Approaching Deadlines in 2025
-      1
     questions_and_answers:
-      - question: Who is the paragraph addressing as the target audience for
-          Oklahoma scholarships?
-        answer: The paragraph is addressing individuals who live in Oklahoma or
-          plan to attend college in Oklahoma.
-      - question: What is suggested as the best way to fund a college education
-          without incurring debt, according to the paragraph?
-        answer: Scholarships are suggested as the best way to fund a college
-          education without having to repay them.
+      - question: Are scholarships available for people that live in Oklahoma?
+        answer: Yes, scholarships are available to individuals in Oklahoma.
       - question: Where can one find information about Oklahoma-specific
-          scholarships, as mentioned in the paragraph?
+          scholarships?
         answer: Scholarships.com is recommended as a resource to find
           Oklahoma-specific scholarships and additional financial aid
           information.
-  - context: |-
-      College Scholarships.org (https://www.collegescholarships.org/) - Helping
-      Students Pay for College Since 1999
-      (https://www.collegescholarships.org/) Scholarships
-      (Https://Www.Collegescholarships.Org/Scholarships/)
-      College Grants (Https://Www.Collegescholarships.Org/Grants/)
-      Student Loans (Https://Www.Collegescholarships.Org/Loans/)
-      Financial Aid Search Engine (Https://Www.Collegescholarships.Org/Financial-
-      Aid/)
-      Home (Https://Www.Collegescholarships.Org/) > Scholarships
-      (Https://Www.Collegescholarships.Org/Scholarships/States.Htm) and Grants
-      (Https://Www.Collegescholarships.Org/Grants/State.Htm) by State > South
-      Carolina
-    questions_and_answers:
-      - question: What services does CollegeScholarships.org offer to help
-          students fund their education?
-        answer: CollegeScholarships.org offers scholarships, grants, student
-          loans, and a financial aid search engine to assist students in paying
-          for college.
-      - question: How does CollegeScholarships.org categorize its financial aid
-          resources?
-        answer: CollegeScholarships.org categorizes its financial aid resources
-          into scholarships, grants, student loans, and a financial aid search
-          engine, with options to filter by state.
-      - question: Can students search for financial aid opportunities specific
-          to South Carolina on CollegeScholarships.org?
-        answer: Yes, CollegeScholarships.org provides separate pages for
-          scholarships and grants specific to South Carolina, allowing students
-          to find state-based financial aid opportunities.
+      - question: What is one way to gain additional information about Oklahoma college scholarships?
+	    answer: Scholarships.com is recommended as a resource to find
+	      Oklahoma-specific scholarships and additional financial aid
+	      information.
   - context: |-
       General Scholarships and Grants
       The South Carolina HOPE Scholarship (http://www.che.sc.gov/New
@@ -110,11 +81,13 @@ seed_examples:
       typically nominate Byrd Scholars, and only those students who are already
       accepted into full-time four-year college and university programs are
       considered.
-      The South Carolina Tuition Grants Program (http://www.sctuitiongrants.com/)
+      The South Carolina Tuition Grants Program
+      (http://www.sctuitiongrants.com/)
       is a need-based fund that underwrites higher education for the state's
       neediest college applicants. Participating public and private colleges
       administer gift-aid that does not require repayment. Increasing access for
-      disadvantaged students, and promoting diversity within the student body are
+      disadvantaged students, and promoting diversity within the student body
+      are
       the fund's primary objectives. Application starts with a timelyfiled FAFSA
       that allows campus financial aid administrators to assess each applicant's
       need for these grants from the State Higher Education Commission.
@@ -156,7 +129,8 @@ seed_examples:
       financial aid resources for teachers
       (https://www.collegescholarships.org/scholarships/teaching-students.htm)
       provide supplemental assistance for students who need it.
-      Unique to South Carolina is the Archibald Rutledge Scholarship (http://ed.s
+      Unique to South Carolina is the Archibald Rutledge Scholarship
+      (http://ed.s
       c.gov/agency/programsservices/62/ArchibaldRutledgeScholarshipProgram.cfm),
       which provides merit-based funding for artistic high school seniors within
       the state. Applicants compete in areas like visual arts, music, writing
@@ -221,11 +195,14 @@ seed_examples:
       - The Illinois Veteran Grant Program (http://www.collegezone.com/416
       - The Grant Program for Dependents of Police or Fire Officers
       (http://www.collegezone.com/416
-      This brief overview of the financial aid programs supported be the state of
-      Illinois for its resident students is only a sampling of what is available.
+      This brief overview of the financial aid programs supported be the state
+      of
+      Illinois for its resident students is only a sampling of what is
+      available.
       Illinois offers a wide range of grants, scholarships, and loan forgiveness
       plans to encourage and support its residents in their quest for a college
-      education. For further information on available programs, and to be kept up
+      education. For further information on available programs, and to be kept
+      up
       to date on changes in financing and requirements, resident students of
       Illinois should visit College Zone (http://www.collegezone.com/index.htm),
       the dedicated website of the Illinois Student Assistance Commission.
@@ -262,7 +239,8 @@ seed_examples:
       Pennsylvania General Assembly. Two full tuition scholarships are
       awarded every year to eligible students enrolled full-time at a state
       college, university, or trade school. In order to qualify students must
-      have a minimum high school GPA of 3.0, must demonstrate a commitment to the
+      have a minimum high school GPA of 3.0, must demonstrate a commitment to
+      the
       community through extracurricular activities, and must meet the
       requisite level of financial need. Application must be made by mail,
       and students must provide three letters of recommendation.
