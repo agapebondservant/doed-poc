@@ -204,9 +204,9 @@ if __name__ == "__main__":
     try:
 
         input_dirs, output_dirs, table_dirs = data_collector.process(
-            f"{Path(__file__).resolve().parents[1]}/scraped", 
-            f"{Path(__file__).resolve().parents[1]}/taxonomy/knowledge",
-            f"{Path(__file__).resolve().parents[1]}/tables")
+            f"{Path(__file__).resolve().parents[1]}/scraped/studentaid/merged/state scholarships", 
+            f"{Path(__file__).resolve().parents[1]}/taxonomy/knowledge/studentaid/merged/state scholarships",
+            f"{Path(__file__).resolve().parents[1]}/tables/studentaid/merged/state scholarships") 
 
         for input_dir, output_dir, table_dir in zip(input_dirs, output_dirs, table_dirs):
             processor.process(input_dir, output_dir, table_dir)

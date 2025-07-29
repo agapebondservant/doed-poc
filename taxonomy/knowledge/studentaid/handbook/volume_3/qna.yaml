@@ -283,4 +283,4 @@ document:
   repo: https://github.com/agapebondservant/doed-poc
   commit: d0b12df7568a5422725d526ff88e0c177c5c1981
   patterns:
-    - 'scraped/studentaid/handbook/volume 3/*.md'
+    - 'scraped/studentaid/handbook/volume_3/*.md'
