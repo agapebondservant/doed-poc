@@ -404,6 +404,6 @@ document_outline: Assists with student eligibility for
   Federal Pell Grants
 document:
   repo: https://github.com/agapebondservant/doed-poc
-  commit: 785fb390ba45c02220c339bcf3a71450a9d69563
+  commit: 8925c4bb238dfbb632d2bf5afc83b181a3e7cbd3
   patterns:
     - 'scraped/studentaid/handbook/volume_7/*.md'

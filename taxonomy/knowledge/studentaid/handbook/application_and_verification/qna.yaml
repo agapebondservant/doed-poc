@@ -396,6 +396,6 @@ document_outline: Manual for completing the Free Application for Federal
   Student Aid (FAFSA) form in 2025 - 2026
 document:
   repo: https://github.com/agapebondservant/doed-poc
-  commit: 785fb390ba45c02220c339bcf3a71450a9d69563
+  commit: 8925c4bb238dfbb632d2bf5afc83b181a3e7cbd3
   patterns:
     - 'scraped/studentaid/handbook/application_and_verification/*.md'
