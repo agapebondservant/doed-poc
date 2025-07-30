@@ -8,5 +8,5 @@ db/
 openshift/wb-secret.yaml
 taxonomy.tar.gz
 taxonomy.zip
-*/.DS_Store
+.DS_Store
 venv/
