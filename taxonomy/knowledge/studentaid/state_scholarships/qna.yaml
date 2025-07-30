@@ -4,36 +4,6 @@ domain: 'state scholarships'
 created_by: 'oawofolu'
 seed_examples:
   - context: |-
-      Oklahoma Scholarships
-      Live in Oklahoma? Attending college or thinking of attending college in
-      Oklahoma? Scholarships, naturally, are the best way to fund your
-      education,
-      since you don't have to pay them back and Scholarships.com can help you
-      find them. A college education can become quite expensive. Luckily,
-      financial aid is readily available to those willing to do the research.
-      For
-      example, Scholarships.com can help you find information about scholarships
-      especially created for those living in Oklahoma. The scholarships below
-      will give you an idea of the opportunities that may be found at
-      Scholarships.com. To get the full benefit of our free services and for
-      additional information about Oklahoma college scholarships and awards
-      based
-      on different search criteria, you should conduct a free college
-      scholarship
-      search at Scholarships.com.
-    questions_and_answers:
-      - question: Are scholarships available for people that live in Oklahoma?
-        answer: Yes, scholarships are available to individuals in Oklahoma.
-      - question: Where can one find information about Oklahoma-specific
-          scholarships?
-        answer: Scholarships.com is recommended as a resource to find
-          Oklahoma-specific scholarships and additional financial aid
-          information.
-      - question: What is one way to gain additional information about Oklahoma college scholarships?
-	    answer: Scholarships.com is recommended as a resource to find
-	      Oklahoma-specific scholarships and additional financial aid
-	      information.
-  - context: |-
       General Scholarships and Grants
       The South Carolina HOPE Scholarship (http://www.che.sc.gov/New
       Web/GoingToCollege/HOPE Hm.htm) is a merit-based program that provides
