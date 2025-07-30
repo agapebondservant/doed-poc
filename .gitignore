@@ -1,8 +1,6 @@
 processors/__pycache__/
 resources/old/
 resources/old/
-resources/studentaid/.DS_Store resources/studentaid/handbook/.DS_Store
-resources/studentaid/.DS_Store resources/studentaid/handbook/.DS_Store
 resources/studentaid/.DS_Store
 resources/studentaid/handbook/.DS_Store
 .env
@@ -11,4 +9,4 @@ openshift/wb-secret.yaml
 taxonomy.tar.gz
 taxonomy.zip
 */.DS_Store
-.venv
+venv/
